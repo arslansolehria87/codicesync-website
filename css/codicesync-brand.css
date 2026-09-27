@@ -1,0 +1,577 @@
+/* ==========================================================================
+   CodiceSync.com - Official Brand Styling & UI/UX Design System
+   ========================================================================== */
+
+:root {
+  /* CodiceSync Official Palette */
+  --cs-bg-dark: #121214;
+  --cs-card-bg: #2A2A33;
+  --cs-primary-purple: #5813BC;
+  --cs-neon-accent: #AC22CB;
+  --cs-royal-purple: #673B92;
+  --cs-muted-purple: #795DA8;
+  --cs-soft-lavender: #D4C2DF;
+  --cs-light-tint: #F3F3FF;
+  --cs-border-glow: rgba(172, 34, 203, 0.3);
+  --cs-card-glass: rgba(42, 42, 51, 0.85);
+
+  /* Typography */
+  --cs-font-heading: 'Alan Sans', 'Inter', system-ui, -apple-system, sans-serif;
+  --cs-font-body: 'Tahoma', system-ui, sans-serif;
+}
+
+/* Global Dark Theme Overrides */
+html, body {
+  background-color: var(--cs-bg-dark) !important;
+  color: var(--cs-light-tint) !important;
+  font-family: var(--cs-font-body) !important;
+  scroll-behavior: smooth;
+}
+
+/* Background Canvas */
+.elementor-page {
+  background-color: var(--cs-bg-dark) !important;
+}
+
+/* Headings Styling */
+h1, h2, h3, h4, h5, h6,
+.elementor-heading-title {
+  font-family: var(--cs-font-heading) !important;
+  color: #FFFFFF !important;
+  letter-spacing: -0.02em !important;
+}
+
+/* Gradient Text Effect */
+.cs-gradient-text,
+.elementor-heading-title.cs-gradient {
+  background: linear-gradient(135deg, #FFFFFF 20%, var(--cs-soft-lavender) 60%, var(--cs-neon-accent) 100%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+}
+
+/* Frosted Glass Cards */
+.cs-glass-card,
+.elementor-inner-section,
+#shark {
+  background: var(--cs-card-glass) !important;
+  backdrop-filter: blur(16px) !important;
+  -webkit-backdrop-filter: blur(16px) !important;
+  border: 1px solid var(--cs-border-glow) !important;
+  border-radius: 20px !important;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.cs-glass-card:hover,
+#shark:hover {
+  border-color: var(--cs-neon-accent) !important;
+  box-shadow: 0 12px 35px rgba(172, 34, 203, 0.25), 0 0 15px rgba(88, 19, 188, 0.2) !important;
+  transform: translateY(-4px) !important;
+}
+
+/* Primary Glowing Button */
+.cs-btn-primary,
+.elementor-button {
+  background: linear-gradient(135deg, var(--cs-primary-purple) 0%, var(--cs-neon-accent) 100%) !important;
+  color: #FFFFFF !important;
+  font-family: var(--cs-font-heading) !important;
+  font-weight: 600 !important;
+  border-radius: 10px !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  box-shadow: 0 4px 20px rgba(88, 19, 188, 0.4) !important;
+  transition: all 0.3s ease !important;
+}
+
+.cs-btn-primary:hover,
+.elementor-button:hover,
+.elementor-button:focus {
+  background: linear-gradient(135deg, var(--cs-neon-accent) 0%, var(--cs-primary-purple) 100%) !important;
+  color: #FFFFFF !important;
+  box-shadow: 0 8px 30px rgba(172, 34, 203, 0.6) !important;
+  transform: translateY(-2px) !important;
+}
+
+/* Secondary Button */
+.cs-btn-secondary {
+  background: rgba(255, 255, 255, 0.05) !important;
+  color: var(--cs-light-tint) !important;
+  border: 1px solid var(--cs-border-glow) !important;
+  border-radius: 10px !important;
+  backdrop-filter: blur(10px) !important;
+  transition: all 0.3s ease !important;
+}
+
+.cs-btn-secondary:hover {
+  background: rgba(172, 34, 203, 0.15) !important;
+  border-color: var(--cs-neon-accent) !important;
+  color: #FFFFFF !important;
+}
+
+/* Navbar Custom Styling */
+.elementskit-navbar-nav-default {
+  background: rgba(18, 18, 20, 0.8) !important;
+  backdrop-filter: blur(12px) !important;
+}
+
+.ekit-menu-nav-link {
+  color: var(--cs-soft-lavender) !important;
+  font-family: var(--cs-font-heading) !important;
+  font-weight: 500 !important;
+  transition: color 0.25s ease !important;
+}
+
+.ekit-menu-nav-link:hover,
+.ekit-menu-nav-link.active {
+  color: var(--cs-neon-accent) !important;
+}
+
+/* Ambient Purple Glow Background Mesh */
+.cs-ambient-glow {
+  position: relative;
+}
+
+.cs-ambient-glow::before {
+  content: '';
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(172, 34, 203, 0.2) 0%, rgba(88, 19, 188, 0.1) 40%, transparent 70%);
+  filter: blur(80px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Badges and Tags */
+.cs-badge {
+  display: inline-block;
+  padding: 6px 16px;
+  background: rgba(88, 19, 188, 0.2);
+  border: 1px solid var(--cs-border-glow);
+  border-radius: 30px;
+  color: var(--cs-soft-lavender);
+  font-family: var(--cs-font-heading);
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Workflow Timeline Step Badge */
+.cs-step-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, var(--cs-primary-purple), var(--cs-neon-accent));
+  color: #FFFFFF;
+  font-family: var(--cs-font-heading);
+  font-weight: 700;
+  font-size: 20px;
+  box-shadow: 0 4px 15px rgba(172, 34, 203, 0.4);
+}
+
+/* Interactive Project Cost Calculator Widget */
+.cs-calculator-card {
+  background: var(--cs-card-bg);
+  border: 1px solid var(--cs-border-glow);
+  border-radius: 20px;
+  padding: 35px;
+}
+
+.cs-calculator-input {
+  width: 100%;
+  background: rgba(18, 18, 20, 0.7);
+  border: 1px solid var(--cs-border-glow);
+  border-radius: 8px;
+  padding: 12px 16px;
+  color: #FFFFFF;
+  font-family: var(--cs-font-body);
+}
+
+.cs-calculator-input:focus {
+  border-color: var(--cs-neon-accent);
+  outline: none;
+  box-shadow: 0 0 10px rgba(172, 34, 203, 0.4);
+}
+
+/* ==========================================================================
+   CodiceSync - Animated Services & Clusters Styling (Compact & Animated)
+   ========================================================================== */
+
+/* Keyframe Animations */
+@keyframes csCardEntrance {
+  from {
+    opacity: 0;
+    transform: translateY(18px) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Filter Tab Buttons */
+.cs-tab-btn {
+  background: rgba(42, 42, 51, 0.7);
+  color: var(--cs-soft-lavender);
+  border: 1px solid var(--cs-border-glow);
+  padding: 10px 22px;
+  border-radius: 25px;
+  font-family: var(--cs-font-heading);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  backdrop-filter: blur(12px);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.cs-tab-btn:hover {
+  border-color: var(--cs-neon-accent);
+  color: #FFFFFF;
+  box-shadow: 0 4px 18px rgba(172, 34, 203, 0.35);
+  transform: translateY(-2px);
+}
+
+.cs-tab-btn.active {
+  background: linear-gradient(135deg, var(--cs-primary-purple) 0%, var(--cs-neon-accent) 100%) !important;
+  color: #FFFFFF !important;
+  border-color: rgba(255, 255, 255, 0.3) !important;
+  box-shadow: 0 0 20px rgba(172, 34, 203, 0.5) !important;
+}
+
+/* Compact Animated Service Card Container */
+.cs-service-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--cs-card-glass);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(172, 34, 203, 0.22);
+  border-radius: 16px;
+  padding: 22px 24px;
+  position: relative;
+  overflow: hidden;
+  animation: csCardEntrance 0.5s cubic-bezier(0.16, 1, 0.3, 1) ease-out forwards;
+  transition: all 0.35s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+/* Top Border Shimmer Animation */
+.cs-service-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, var(--cs-neon-accent), var(--cs-primary-purple), transparent);
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+
+/* Diagonal Sheen Sweep on Hover */
+.cs-service-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -150%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(60deg, transparent, rgba(255, 255, 255, 0.06), transparent);
+  transform: skewX(-20deg);
+  transition: left 0.75s ease;
+  pointer-events: none;
+}
+
+.cs-service-card:hover {
+  border-color: var(--cs-neon-accent);
+  box-shadow: 0 12px 30px rgba(172, 34, 203, 0.3), 0 0 16px rgba(88, 19, 188, 0.2);
+  transform: translateY(-6px) scale(1.015);
+}
+
+.cs-service-card:hover::before {
+  opacity: 1;
+}
+
+.cs-service-card:hover::after {
+  left: 150%;
+}
+
+/* Card Header */
+.cs-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.cs-icon-wrapper {
+  width: 44px;
+  height: 44px;
+  border-radius: 11px;
+  background: rgba(88, 19, 188, 0.22);
+  border: 1px solid var(--cs-border-glow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.cs-service-card:hover .cs-icon-wrapper {
+  transform: translateY(-2px) scale(1.12) rotate(6deg);
+  border-color: var(--cs-neon-accent);
+  background: rgba(172, 34, 203, 0.28);
+  box-shadow: 0 0 14px rgba(172, 34, 203, 0.5);
+}
+
+/* Compact Cluster Badges */
+.cs-cluster-pill {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 4px 10px;
+  border-radius: 12px;
+}
+
+.pill-growth {
+  background: rgba(172, 34, 203, 0.2);
+  color: #AC22CB;
+  border: 1px solid rgba(172, 34, 203, 0.4);
+}
+
+.pill-tech {
+  background: rgba(88, 19, 188, 0.25);
+  color: #D4C2DF;
+  border: 1px solid rgba(138, 79, 219, 0.4);
+}
+
+/* Compact Card Content Typography */
+.cs-card-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin-bottom: 4px;
+  font-family: var(--cs-font-heading);
+  transition: color 0.3s ease;
+}
+
+.cs-service-card:hover .cs-card-title {
+  color: #FFFFFF;
+  text-shadow: 0 0 8px rgba(172, 34, 203, 0.4);
+}
+
+.cs-card-subtitle {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--cs-neon-accent);
+  margin-bottom: 10px;
+  line-height: 1.35;
+  font-family: var(--cs-font-heading);
+}
+
+.cs-card-desc {
+  color: var(--cs-light-tint);
+  opacity: 0.82;
+  font-size: 13px;
+  line-height: 1.5;
+  margin-bottom: 16px;
+  flex-grow: 1;
+}
+
+/* Tech / Feature Tags */
+.cs-pill-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+.cs-pill {
+  background: rgba(18, 18, 20, 0.6);
+  border: 1px solid rgba(212, 194, 223, 0.2);
+  color: var(--cs-soft-lavender);
+  padding: 3px 9px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 500;
+  transition: all 0.25s ease;
+}
+
+.cs-service-card:hover .cs-pill {
+  border-color: rgba(172, 34, 203, 0.4);
+  background: rgba(88, 19, 188, 0.2);
+  color: #FFFFFF;
+}
+
+/* Card Footer CTA Link */
+.cs-card-footer {
+  margin-top: auto;
+  padding-top: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.cs-card-link {
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 13px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: color 0.3s ease;
+}
+
+.cs-card-link .cs-arrow {
+  transition: transform 0.3s ease;
+}
+
+.cs-service-card:hover .cs-card-link {
+  color: var(--cs-neon-accent);
+}
+
+.cs-service-card:hover .cs-card-link .cs-arrow {
+  transform: translateX(5px);
+}
+
+/* Floating Showcase Cards Animation Rules */
+@keyframes csFloatSlow {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+@keyframes csFloatFast {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-14px); }
+  100% { transform: translateY(0px); }
+}
+
+.cs-float-1 { animation: csFloatSlow 5s ease-in-out infinite; }
+.cs-float-2 { animation: csFloatFast 4.2s ease-in-out 0.5s infinite; }
+.cs-float-3 { animation: csFloatSlow 4.8s ease-in-out 1s infinite; }
+.cs-float-4 { animation: csFloatFast 5.4s ease-in-out 0.2s infinite; }
+.cs-float-5 { animation: csFloatSlow 4.5s ease-in-out 0.8s infinite; }
+
+.cs-showcase-card {
+  transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease !important;
+  flex-shrink: 0 !important;
+}
+
+.cs-showcase-card:hover {
+  transform: translateY(-12px) scale(1.03) !important;
+  border-color: #AC22CB !important;
+  box-shadow: 0 16px 40px rgba(172, 34, 203, 0.4) !important;
+}
+
+/* Enforce 1 Single Row Layout for Showcase Cards */
+.cs-showcase-row {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  justify-content: center !important;
+  align-items: flex-end !important;
+  gap: 16px !important;
+}
+
+@media (max-width: 1100px) {
+  .cs-showcase-row {
+    justify-content: flex-start !important;
+    overflow-x: auto !important;
+    padding-bottom: 15px !important;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+
+
+/* ==========================================================================
+   CodiceSync - Team Photos Horizontal Slider & Markhor Vertical Button Slider
+   ========================================================================== */
+
+@keyframes csPhotoFloatLeft {
+  0% { transform: translateX(0px); }
+  50% { transform: translateX(-24px); }
+  100% { transform: translateX(0px); }
+}
+
+@keyframes csPhotoFloatRight {
+  0% { transform: translateX(0px); }
+  50% { transform: translateX(28px); }
+  100% { transform: translateX(0px); }
+}
+
+.cs-team-photo-1 {
+  animation: csPhotoFloatLeft 6s ease-in-out infinite !important;
+}
+
+.cs-team-photo-2 {
+  animation: csPhotoFloatRight 5.2s ease-in-out 0.4s infinite !important;
+}
+
+#cs-photo-slider-wrapper:hover .cs-team-photo-1 {
+  transform: translateX(-35px) scale(1.02) !important;
+}
+
+#cs-photo-slider-wrapper:hover .cs-team-photo-2 {
+  transform: translateX(45px) scale(1.02) !important;
+}
+
+/* Markhor Vertical Text & Background Fill Slider Button */
+#markhor .cs-markhor-btn {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  isolation: isolate;
+  transition: box-shadow 0.35s ease, transform 0.35s ease !important;
+}
+
+#markhor .cs-markhor-btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0;
+  background: #AC22CB;
+  transition: height 0.45s cubic-bezier(0.65, 0, 0.35, 1);
+  z-index: -1;
+}
+
+#markhor .cs-markhor-btn:hover::before {
+  height: 100%;
+}
+
+#markhor .cs-markhor-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(172, 34, 203, 0.6) !important;
+}
+
+#markhor .cs-markhor-btn .markhor-inner {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  line-height: 1.2;
+  height: 1.2em;
+  vertical-align: middle;
+}
+
+#markhor .cs-markhor-btn .markhor-t {
+  display: block;
+  transition: transform 0.45s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+#markhor .cs-markhor-btn .markhor-t2 {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+}
+
+#markhor .cs-markhor-btn:hover .markhor-t {
+  transform: translateY(-100%);
+}
