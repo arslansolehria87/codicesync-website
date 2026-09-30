@@ -1089,102 +1089,120 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 
 <!-- ==========================================================================
-     CodiceSync - Our Best Works (Case Studies Projects Showcase Section)
+     CodiceSync - Our Best Works (1-to-1 Exact Clone of 10X Digital Ventures)
      ========================================================================== -->
-<section id="projects" style="padding: 100px 40px; background: #121214; position: relative; overflow: hidden; border-top: 1px solid rgba(172, 34, 203, 0.15);">
-  <div style="max-width: 1280px; margin: 0 auto; position: relative; z-index: 2;">
+<section id="projects" style="padding: 100px 20px 140px 20px; background: #121214; position: relative; overflow: visible;">
+  
+  <!-- Giant Background Watermark Text -->
+  <div style="position: absolute; top: 40px; left: 50%; transform: translateX(-50%); width: 100%; text-align: center; pointer-events: none; z-index: 0; opacity: 0.04; user-select: none;">
+    <span style="font-size: clamp(80px, 14vw, 200px); font-weight: 900; letter-spacing: -10px; color: #FFFFFF; font-family: var(--cs-font-heading); text-transform: uppercase; line-height: 0.9; display: block;">
+      OUR BEST WORKS
+    </span>
+  </div>
+
+  <div style="max-width: 1240px; margin: 0 auto; position: relative; z-index: 2;">
     
-    <!-- Section Header -->
-    <div style="text-align: center; margin-bottom: 60px;">
+    <!-- Foreground Section Header -->
+    <div style="text-align: center; margin-bottom: 70px;">
       <span class="cs-badge" style="margin-bottom: 16px;">Selected Case Studies</span>
       <h2 class="cs-gradient-text" style="font-size: 46px; font-weight: 800; margin-bottom: 16px; letter-spacing: -1px; font-family: var(--cs-font-heading);">
         Our Best Works
       </h2>
-      <p style="color: #D4C2DF; font-size: 18px; max-width: 680px; margin: 0 auto; opacity: 0.9;">
+      <p style="color: #D4C2DF; font-size: 18px; max-width: 680px; margin: 0 auto; opacity: 0.9; font-weight: 400;">
         Explore how we help ambitious brands scale with custom software engineering, conversion-focused web applications, and intelligent systems.
       </p>
     </div>
 
-    <!-- 5 Featured Project Cards Stack -->
-    <div style="display: flex; flex-direction: column; gap: 40px;">
+    <!-- Sticky Stacking Cards Container -->
+    <div class="cs-projects-stack" style="display: flex; flex-direction: column; gap: 50px; position: relative;">
       
-      <!-- Project Card 1: Dr Javed Iqbal -->
-      <div id="shaki2" class="cs-project-card" style="background: rgba(42, 42, 51, 0.7); backdrop-filter: blur(16px); border: 1px solid rgba(172, 34, 203, 0.25); border-radius: 24px; padding: 24px; overflow: hidden; transition: border-color 0.4s ease, box-shadow 0.4s ease;">
-        <div style="width: 100%; height: 520px; border-radius: 18px; overflow: hidden; position: relative;">
-          <img src="images/Artboard-1-copy-2.webp" alt="Dr Javed Iqbal Case Study" style="width: 100%; height: 100%; object-fit: cover; object-position: top center; transition: transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);">
-        </div>
-        <div style="display: flex; align-items: center; justify-content: space-between; margin-top: 20px; padding: 4px 10px;">
-          <div>
-            <h3 style="font-size: 26px; font-weight: 700; color: #FFFFFF; font-family: var(--cs-font-heading); margin-bottom: 4px;">Dr Javed Iqbal</h3>
-            <div style="font-size: 14px; color: #D4C2DF;">Personal Brand &amp; Digital Ecosystem</div>
+      <!-- Card 1: Dr Zeeshan Usmani -->
+      <div id="wwd-card-1" class="cs-sticky-card-wrapper" style="position: sticky; top: 110px; z-index: 1; transition: top 0.3s ease;">
+        <div id="shaki" class="cs-best-card cs-shark-hover" style="background: rgba(42, 42, 51, 0.95); backdrop-filter: blur(16px); border: 1px solid rgba(172, 34, 203, 0.35); border-radius: 26px; padding: 24px; position: relative; overflow: hidden; isolation: isolate; box-shadow: 0 15px 40px rgba(0,0,0,0.6); transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);">
+          <div style="width: 100%; height: 520px; border-radius: 20px; overflow: hidden; position: relative; z-index: 1;">
+            <img src="images/6a08502fdbe569a25d6a9931.jpg" alt="Dr Zeeshan Usmani Case Study" style="width: 100%; height: 100%; object-fit: cover; object-position: top center; transition: transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);">
           </div>
-          <a href="https://10xdigitalventures.com/case-studies/dr-javed-iqbal/" target="_blank" style="color: #FFFFFF; font-size: 16px; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; border-bottom: 2px solid #AC22CB; padding-bottom: 4px; transition: color 0.3s ease, border-color 0.3s ease;" onmouseover="this.style.color='#AC22CB';" onmouseout="this.style.color='#FFFFFF';">
-            View Project <span style="font-size: 18px;">&rarr;</span>
-          </a>
+          <div class="cs-card-meta-bar" style="display: flex; align-items: center; justify-content: space-between; margin-top: 20px; padding: 6px 12px; position: relative; z-index: 2; transition: color 0.4s ease;">
+            <div>
+              <h3 class="cs-card-title-text" style="font-size: 26px; font-weight: 700; color: #FFFFFF; font-family: var(--cs-font-heading); margin-bottom: 4px; transition: color 0.4s ease;">Dr Zeeshan Usmani</h3>
+              <div class="cs-card-sub-text" style="font-size: 14px; color: #D4C2DF; transition: color 0.4s ease;">AI &amp; Data Science Media Architecture</div>
+            </div>
+            <a href="https://10xdigitalventures.com/case-studies/dr-zeeshan-usmani/" target="_blank" class="cs-card-link-btn" style="color: #FFFFFF; font-size: 16px; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; border-bottom: 2px solid #AC22CB; padding-bottom: 4px; transition: all 0.3s ease;">
+              View Project <span style="font-size: 18px;">&rarr;</span>
+            </a>
+          </div>
         </div>
       </div>
 
-      <!-- Project Card 2: Chaajao Tech -->
-      <div id="shaki4" class="cs-project-card" style="background: rgba(42, 42, 51, 0.7); backdrop-filter: blur(16px); border: 1px solid rgba(172, 34, 203, 0.25); border-radius: 24px; padding: 24px; overflow: hidden; transition: border-color 0.4s ease, box-shadow 0.4s ease;">
-        <div style="width: 100%; height: 520px; border-radius: 18px; overflow: hidden; position: relative;">
-          <img src="images/Artboard-1-copy-3.webp" alt="Chaajao Tech Case Study" style="width: 100%; height: 100%; object-fit: cover; object-position: top center; transition: transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);">
-        </div>
-        <div style="display: flex; align-items: center; justify-content: space-between; margin-top: 20px; padding: 4px 10px;">
-          <div>
-            <h3 style="font-size: 26px; font-weight: 700; color: #FFFFFF; font-family: var(--cs-font-heading); margin-bottom: 4px;">Chaajao Tech</h3>
-            <div style="font-size: 14px; color: #D4C2DF;">EdTech Learning Platform &amp; Mobile App</div>
+      <!-- Card 2: Dr Javed Iqbal -->
+      <div id="wwd-card-2" class="cs-sticky-card-wrapper" style="position: sticky; top: 140px; z-index: 2; transition: top 0.3s ease;">
+        <div id="shaki2" class="cs-best-card cs-shark-hover" style="background: rgba(42, 42, 51, 0.95); backdrop-filter: blur(16px); border: 1px solid rgba(172, 34, 203, 0.35); border-radius: 26px; padding: 24px; position: relative; overflow: hidden; isolation: isolate; box-shadow: 0 15px 40px rgba(0,0,0,0.6); transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);">
+          <div style="width: 100%; height: 520px; border-radius: 20px; overflow: hidden; position: relative; z-index: 1;">
+            <img src="images/Artboard-1-copy-2.webp" alt="Dr Javed Iqbal Case Study" style="width: 100%; height: 100%; object-fit: cover; object-position: top center; transition: transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);">
           </div>
-          <a href="https://10xdigitalventures.com/case-studies/chaajao/" target="_blank" style="color: #FFFFFF; font-size: 16px; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; border-bottom: 2px solid #AC22CB; padding-bottom: 4px; transition: color 0.3s ease, border-color 0.3s ease;" onmouseover="this.style.color='#AC22CB';" onmouseout="this.style.color='#FFFFFF';">
-            View Project <span style="font-size: 18px;">&rarr;</span>
-          </a>
+          <div class="cs-card-meta-bar" style="display: flex; align-items: center; justify-content: space-between; margin-top: 20px; padding: 6px 12px; position: relative; z-index: 2; transition: color 0.4s ease;">
+            <div>
+              <h3 class="cs-card-title-text" style="font-size: 26px; font-weight: 700; color: #FFFFFF; font-family: var(--cs-font-heading); margin-bottom: 4px; transition: color 0.4s ease;">Dr Javed Iqbal</h3>
+              <div class="cs-card-sub-text" style="font-size: 14px; color: #D4C2DF; transition: color 0.4s ease;">Surgical Education &amp; Digital Ecosystem</div>
+            </div>
+            <a href="https://10xdigitalventures.com/case-studies/dr-javed-iqbal/" target="_blank" class="cs-card-link-btn" style="color: #FFFFFF; font-size: 16px; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; border-bottom: 2px solid #AC22CB; padding-bottom: 4px; transition: all 0.3s ease;">
+              View Project <span style="font-size: 18px;">&rarr;</span>
+            </a>
+          </div>
         </div>
       </div>
 
-      <!-- Project Card 3: TIP Pakistan -->
-      <div id="shaki5" class="cs-project-card" style="background: rgba(42, 42, 51, 0.7); backdrop-filter: blur(16px); border: 1px solid rgba(172, 34, 203, 0.25); border-radius: 24px; padding: 24px; overflow: hidden; transition: border-color 0.4s ease, box-shadow 0.4s ease;">
-        <div style="width: 100%; height: 520px; border-radius: 18px; overflow: hidden; position: relative;">
-          <img src="images/Artboard-1-copy-1.webp" alt="TIP Pakistan Case Study" style="width: 100%; height: 100%; object-fit: cover; object-position: top center; transition: transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);">
-        </div>
-        <div style="display: flex; align-items: center; justify-content: space-between; margin-top: 20px; padding: 4px 10px;">
-          <div>
-            <h3 style="font-size: 26px; font-weight: 700; color: #FFFFFF; font-family: var(--cs-font-heading); margin-bottom: 4px;">TIP Pakistan</h3>
-            <div style="font-size: 14px; color: #D4C2DF;">Telecom Infrastructure Portal</div>
+      <!-- Card 3: Childlife Foundation -->
+      <div id="wwd-card-3" class="cs-sticky-card-wrapper" style="position: sticky; top: 170px; z-index: 3; transition: top 0.3s ease;">
+        <div id="shaki3" class="cs-best-card cs-shark-hover" style="background: rgba(42, 42, 51, 0.95); backdrop-filter: blur(16px); border: 1px solid rgba(172, 34, 203, 0.35); border-radius: 26px; padding: 24px; position: relative; overflow: hidden; isolation: isolate; box-shadow: 0 15px 40px rgba(0,0,0,0.6); transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);">
+          <div style="width: 100%; height: 520px; border-radius: 20px; overflow: hidden; position: relative; z-index: 1;">
+            <img src="images/Artboard-1.webp" alt="Childlife Foundation Case Study" style="width: 100%; height: 100%; object-fit: cover; object-position: top center; transition: transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);">
           </div>
-          <a href="https://10xdigitalventures.com/case-studies/tip/" target="_blank" style="color: #FFFFFF; font-size: 16px; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; border-bottom: 2px solid #AC22CB; padding-bottom: 4px; transition: color 0.3s ease, border-color 0.3s ease;" onmouseover="this.style.color='#AC22CB';" onmouseout="this.style.color='#FFFFFF';">
-            View Project <span style="font-size: 18px;">&rarr;</span>
-          </a>
+          <div class="cs-card-meta-bar" style="display: flex; align-items: center; justify-content: space-between; margin-top: 20px; padding: 6px 12px; position: relative; z-index: 2; transition: color 0.4s ease;">
+            <div>
+              <h3 class="cs-card-title-text" style="font-size: 26px; font-weight: 700; color: #FFFFFF; font-family: var(--cs-font-heading); margin-bottom: 4px; transition: color 0.4s ease;">Childlife Foundation</h3>
+              <div class="cs-card-sub-text" style="font-size: 14px; color: #D4C2DF; transition: color 0.4s ease;">Healthcare Telemedicine &amp; Operations</div>
+            </div>
+            <a href="https://10xdigitalventures.com/case-studies/childlife-foundation/" target="_blank" class="cs-card-link-btn" style="color: #FFFFFF; font-size: 16px; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; border-bottom: 2px solid #AC22CB; padding-bottom: 4px; transition: all 0.3s ease;">
+              View Project <span style="font-size: 18px;">&rarr;</span>
+            </a>
+          </div>
         </div>
       </div>
 
-      <!-- Project Card 4: Childlife Foundation -->
-      <div id="shaki3" class="cs-project-card" style="background: rgba(42, 42, 51, 0.7); backdrop-filter: blur(16px); border: 1px solid rgba(172, 34, 203, 0.25); border-radius: 24px; padding: 24px; overflow: hidden; transition: border-color 0.4s ease, box-shadow 0.4s ease;">
-        <div style="width: 100%; height: 520px; border-radius: 18px; overflow: hidden; position: relative;">
-          <img src="images/Artboard-1.webp" alt="Childlife Foundation Case Study" style="width: 100%; height: 100%; object-fit: cover; object-position: top center; transition: transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);">
-        </div>
-        <div style="display: flex; align-items: center; justify-content: space-between; margin-top: 20px; padding: 4px 10px;">
-          <div>
-            <h3 style="font-size: 26px; font-weight: 700; color: #FFFFFF; font-family: var(--cs-font-heading); margin-bottom: 4px;">Childlife Foundation</h3>
-            <div style="font-size: 14px; color: #D4C2DF;">Healthcare Portal &amp; Donation Workflows</div>
+      <!-- Card 4: Chaajao Tech -->
+      <div id="wwd-card-4" class="cs-sticky-card-wrapper" style="position: sticky; top: 200px; z-index: 4; transition: top 0.3s ease;">
+        <div id="shaki4" class="cs-best-card cs-shark-hover" style="background: rgba(42, 42, 51, 0.95); backdrop-filter: blur(16px); border: 1px solid rgba(172, 34, 203, 0.35); border-radius: 26px; padding: 24px; position: relative; overflow: hidden; isolation: isolate; box-shadow: 0 15px 40px rgba(0,0,0,0.6); transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);">
+          <div style="width: 100%; height: 520px; border-radius: 20px; overflow: hidden; position: relative; z-index: 1;">
+            <img src="images/6a0855c6dbe569a25d6b600e.jpg" alt="Chaajao Tech Case Study" style="width: 100%; height: 100%; object-fit: cover; object-position: top center; transition: transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);">
           </div>
-          <a href="https://10xdigitalventures.com/case-studies/childlife-foundation/" target="_blank" style="color: #FFFFFF; font-size: 16px; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; border-bottom: 2px solid #AC22CB; padding-bottom: 4px; transition: color 0.3s ease, border-color 0.3s ease;" onmouseover="this.style.color='#AC22CB';" onmouseout="this.style.color='#FFFFFF';">
-            View Project <span style="font-size: 18px;">&rarr;</span>
-          </a>
+          <div class="cs-card-meta-bar" style="display: flex; align-items: center; justify-content: space-between; margin-top: 20px; padding: 6px 12px; position: relative; z-index: 2; transition: color 0.4s ease;">
+            <div>
+              <h3 class="cs-card-title-text" style="font-size: 26px; font-weight: 700; color: #FFFFFF; font-family: var(--cs-font-heading); margin-bottom: 4px; transition: color 0.4s ease;">Chaajao Tech</h3>
+              <div class="cs-card-sub-text" style="font-size: 14px; color: #D4C2DF; transition: color 0.4s ease;">EdTech Test Prep &amp; Learning Platform</div>
+            </div>
+            <a href="https://10xdigitalventures.com/case-studies/chaajao/" target="_blank" class="cs-card-link-btn" style="color: #FFFFFF; font-size: 16px; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; border-bottom: 2px solid #AC22CB; padding-bottom: 4px; transition: all 0.3s ease;">
+              View Project <span style="font-size: 18px;">&rarr;</span>
+            </a>
+          </div>
         </div>
       </div>
 
-      <!-- Project Card 5: Dr Zeeshan Usmani -->
-      <div id="shaki" class="cs-project-card" style="background: rgba(42, 42, 51, 0.7); backdrop-filter: blur(16px); border: 1px solid rgba(172, 34, 203, 0.25); border-radius: 24px; padding: 24px; overflow: hidden; transition: border-color 0.4s ease, box-shadow 0.4s ease;">
-        <div style="width: 100%; height: 520px; border-radius: 18px; overflow: hidden; position: relative;">
-          <img src="images/6a08502fdbe569a25d6a9931.jpg" alt="Dr Zeeshan Usmani Case Study" style="width: 100%; height: 100%; object-fit: cover; object-position: top center; transition: transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);">
-        </div>
-        <div style="display: flex; align-items: center; justify-content: space-between; margin-top: 20px; padding: 4px 10px;">
-          <div>
-            <h3 style="font-size: 26px; font-weight: 700; color: #FFFFFF; font-family: var(--cs-font-heading); margin-bottom: 4px;">Dr Zeeshan Usmani</h3>
-            <div style="font-size: 14px; color: #D4C2DF;">AI &amp; Data Science Media Architecture</div>
+      <!-- Card 5: TIP Pakistan -->
+      <div id="wwd-card-5" class="cs-sticky-card-wrapper" style="position: sticky; top: 230px; z-index: 5; transition: top 0.3s ease;">
+        <div id="shaki5" class="cs-best-card cs-shark-hover" style="background: rgba(42, 42, 51, 0.95); backdrop-filter: blur(16px); border: 1px solid rgba(172, 34, 203, 0.35); border-radius: 26px; padding: 24px; position: relative; overflow: hidden; isolation: isolate; box-shadow: 0 15px 40px rgba(0,0,0,0.6); transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);">
+          <div style="width: 100%; height: 520px; border-radius: 20px; overflow: hidden; position: relative; z-index: 1;">
+            <img src="images/Artboard-1-copy-1.webp" alt="TIP Pakistan Case Study" style="width: 100%; height: 100%; object-fit: cover; object-position: top center; transition: transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);">
           </div>
-          <a href="https://10xdigitalventures.com/case-studies/dr-zeeshan-usmani/" target="_blank" style="color: #FFFFFF; font-size: 16px; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; border-bottom: 2px solid #AC22CB; padding-bottom: 4px; transition: color 0.3s ease, border-color 0.3s ease;" onmouseover="this.style.color='#AC22CB';" onmouseout="this.style.color='#FFFFFF';">
-            View Project <span style="font-size: 18px;">&rarr;</span>
-          </a>
+          <div class="cs-card-meta-bar" style="display: flex; align-items: center; justify-content: space-between; margin-top: 20px; padding: 6px 12px; position: relative; z-index: 2; transition: color 0.4s ease;">
+            <div>
+              <h3 class="cs-card-title-text" style="font-size: 26px; font-weight: 700; color: #FFFFFF; font-family: var(--cs-font-heading); margin-bottom: 4px; transition: color 0.4s ease;">TIP Pakistan</h3>
+              <div class="cs-card-sub-text" style="font-size: 14px; color: #D4C2DF; transition: color 0.4s ease;">Textile Institute &amp; Learning System</div>
+            </div>
+            <a href="https://10xdigitalventures.com/case-studies/tip/" target="_blank" class="cs-card-link-btn" style="color: #FFFFFF; font-size: 16px; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; border-bottom: 2px solid #AC22CB; padding-bottom: 4px; transition: all 0.3s ease;">
+              View Project <span style="font-size: 18px;">&rarr;</span>
+            </a>
+          </div>
         </div>
       </div>
 
@@ -1719,337 +1737,353 @@ p.sc-card-desc {
   </div>
 </section>
 
+
+<!-- ==========================================================================
+     CodiceSync - What Our Clients Say (3D Coverflow Video Carousel)
+     ========================================================================== -->
+<section id="testimonials" style="padding: 100px 20px 80px 20px; background: #121214; text-align: center; position: relative; overflow: hidden; border-top: 1px solid rgba(172, 34, 203, 0.15);">
+  <div style="max-width: 1240px; margin: 0 auto;">
+    
+    <!-- Section Header -->
+    <div style="margin-bottom: 50px;">
+      <h2 style="font-size: clamp(32px, 4vw, 54px); font-weight: 800; color: #FFFFFF; font-family: var(--cs-font-heading); margin-bottom: 16px; letter-spacing: -0.02em;">What Our Clients Say</h2>
+      <p style="font-size: 15px; color: rgba(255, 255, 255, 0.6); max-width: 650px; margin: 0 auto; line-height: 1.6;">Hear directly from businesses we've worked with and how our systems have helped them grow and scale.</p>
+    </div>
+
+    <!-- 3D Coverflow Swiper Container -->
+    <div class="swiper cs-testimonials-swiper" style="padding: 40px 0 60px 0; overflow: visible;">
+      <div class="swiper-wrapper" style="align-items: center;">
+        
+        <!-- Slide 1 -->
+        <div class="swiper-slide cs-testi-card" data-client-name="Hammad Safi" style="width: 250px; height: 380px; border-radius: 20px; overflow: hidden; position: relative; background: #1A1A1E; border: 1px solid rgba(255,255,255,0.12); box-shadow: 0 15px 35px rgba(0,0,0,0.5); transition: all 0.4s ease;">
+          <video poster="images/1.jpg" style="width: 100%; height: 100%; object-fit: cover;" playsinline muted loop>
+            <source src="media/69f05ae605d4199001390142.mp4" type="video/mp4">
+          </video>
+          <div class="cs-testi-overlay" style="position: absolute; inset: 0; background: linear-gradient(180deg, transparent 40%, rgba(0,0,0,0.85) 100%); display: flex; flex-direction: column; justify-content: flex-end; padding: 20px; text-align: left; pointer-events: none;">
+            <div style="font-size: 16px; font-weight: 700; color: #FFF;">Hammad Safi</div>
+            <div style="font-size: 12px; color: rgba(255,255,255,0.7);">Thought Leader &amp; Educator</div>
+          </div>
+          <button onclick="toggleTestiVideo(this)" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 50px; height: 50px; border-radius: 50%; background: rgba(0,0,0,0.5); backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,0.3); color: #FFF; font-size: 18px; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: transform 0.2s ease, background 0.2s ease;">▶</button>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="swiper-slide cs-testi-card" data-client-name="Fahad Raza" style="width: 250px; height: 380px; border-radius: 20px; overflow: hidden; position: relative; background: #1A1A1E; border: 1px solid rgba(255,255,255,0.12); box-shadow: 0 15px 35px rgba(0,0,0,0.5); transition: all 0.4s ease;">
+          <video poster="images/2.jpg" style="width: 100%; height: 100%; object-fit: cover;" playsinline muted loop>
+            <source src="media/69f05ae6eecc3af70ad344cb.mp4" type="video/mp4">
+          </video>
+          <div class="cs-testi-overlay" style="position: absolute; inset: 0; background: linear-gradient(180deg, transparent 40%, rgba(0,0,0,0.85) 100%); display: flex; flex-direction: column; justify-content: flex-end; padding: 20px; text-align: left; pointer-events: none;">
+            <div style="font-size: 16px; font-weight: 700; color: #FFF;">Fahad Raza</div>
+            <div style="font-size: 12px; color: rgba(255,255,255,0.7);">Digital Creator &amp; Entrepreneur</div>
+          </div>
+          <button onclick="toggleTestiVideo(this)" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 50px; height: 50px; border-radius: 50%; background: rgba(0,0,0,0.5); backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,0.3); color: #FFF; font-size: 18px; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: transform 0.2s ease, background 0.2s ease;">▶</button>
+        </div>
+
+        <!-- Slide 3 (Active Center) -->
+        <div class="swiper-slide cs-testi-card" data-client-name="Dr Javed" style="width: 250px; height: 380px; border-radius: 20px; overflow: hidden; position: relative; background: #1A1A1E; border: 1px solid rgba(255,255,255,0.12); box-shadow: 0 15px 35px rgba(0,0,0,0.5); transition: all 0.4s ease;">
+          <video poster="images/3.jpg" style="width: 100%; height: 100%; object-fit: cover;" playsinline muted loop>
+            <source src="media/69c631a75ebd4919967c4e8a.mp4" type="video/mp4">
+          </video>
+          <div class="cs-testi-overlay" style="position: absolute; inset: 0; background: linear-gradient(180deg, transparent 40%, rgba(0,0,0,0.85) 100%); display: flex; flex-direction: column; justify-content: flex-end; padding: 20px; text-align: left; pointer-events: none;">
+            <div style="font-size: 16px; font-weight: 700; color: #FFF;">Dr Javed Iqbal</div>
+            <div style="font-size: 12px; color: rgba(255,255,255,0.7);">Surgical Educator &amp; Mentor</div>
+          </div>
+          <button onclick="toggleTestiVideo(this)" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 50px; height: 50px; border-radius: 50%; background: rgba(0,0,0,0.5); backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,0.3); color: #FFF; font-size: 18px; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: transform 0.2s ease, background 0.2s ease;">▶</button>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="swiper-slide cs-testi-card" data-client-name="Shahzaib Khan" style="width: 250px; height: 380px; border-radius: 20px; overflow: hidden; position: relative; background: #1A1A1E; border: 1px solid rgba(255,255,255,0.12); box-shadow: 0 15px 35px rgba(0,0,0,0.5); transition: all 0.4s ease;">
+          <video poster="images/696b75744e42b928ed58394e.jpg" style="width: 100%; height: 100%; object-fit: cover;" playsinline muted loop>
+            <source src="media/69c631a75ebd4946c87c4e8f.mp4" type="video/mp4">
+          </video>
+          <div class="cs-testi-overlay" style="position: absolute; inset: 0; background: linear-gradient(180deg, transparent 40%, rgba(0,0,0,0.85) 100%); display: flex; flex-direction: column; justify-content: flex-end; padding: 20px; text-align: left; pointer-events: none;">
+            <div style="font-size: 16px; font-weight: 700; color: #FFF;">Shahzaib Khan</div>
+            <div style="font-size: 12px; color: rgba(255,255,255,0.7);">E-Commerce Founder</div>
+          </div>
+          <button onclick="toggleTestiVideo(this)" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 50px; height: 50px; border-radius: 50%; background: rgba(0,0,0,0.5); backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,0.3); color: #FFF; font-size: 18px; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: transform 0.2s ease, background 0.2s ease;">▶</button>
+        </div>
+
+        <!-- Slide 5 -->
+        <div class="swiper-slide cs-testi-card" data-client-name="Childlife Foundation" style="width: 250px; height: 380px; border-radius: 20px; overflow: hidden; position: relative; background: #1A1A1E; border: 1px solid rgba(255,255,255,0.12); box-shadow: 0 15px 35px rgba(0,0,0,0.5); transition: all 0.4s ease;">
+          <video poster="images/6a08502fdbe569a25d6a9931.jpg" style="width: 100%; height: 100%; object-fit: cover;" playsinline muted loop>
+            <source src="media/6aa79e774c0f71e6c6bb5ff3.mp4" type="video/mp4">
+          </video>
+          <div class="cs-testi-overlay" style="position: absolute; inset: 0; background: linear-gradient(180deg, transparent 40%, rgba(0,0,0,0.85) 100%); display: flex; flex-direction: column; justify-content: flex-end; padding: 20px; text-align: left; pointer-events: none;">
+            <div style="font-size: 16px; font-weight: 700; color: #FFF;">Childlife Foundation</div>
+            <div style="font-size: 12px; color: rgba(255,255,255,0.7);">Healthcare System</div>
+          </div>
+          <button onclick="toggleTestiVideo(this)" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 50px; height: 50px; border-radius: 50%; background: rgba(0,0,0,0.5); backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,0.3); color: #FFF; font-size: 18px; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: transform 0.2s ease, background 0.2s ease;">▶</button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Floating Capsule Control Pill -->
+    <div style="display: flex; justify-content: center; margin-top: 10px;">
+      <div style="background: #0E0E10; border: 1px solid rgba(255, 255, 255, 0.15); border-radius: 40px; padding: 8px 18px; display: inline-flex; align-items: center; gap: 14px; box-shadow: 0 10px 30px rgba(0,0,0,0.6);">
+        <button class="cs-testi-prev" style="background: rgba(255,255,255,0.1); border: none; color: #FFF; width: 32px; height: 32px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 16px; transition: background 0.2s ease;">‹</button>
+        <div class="cs-testi-active-label" style="background: rgba(255,255,255,0.08); border-radius: 20px; padding: 6px 14px; display: flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 600; color: #FFF;">
+          <span style="width: 8px; height: 8px; border-radius: 50%; background: #FF7E27; display: inline-block;"></span>
+          <span id="cs-active-client-name">Dr Javed</span>
+        </div>
+        <button class="cs-testi-next" style="background: rgba(255,255,255,0.1); border: none; color: #FFF; width: 32px; height: 32px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 16px; transition: background 0.2s ease;">›</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ==========================================================================
+     CodiceSync - Our Latest Insights and Articles (Blogs Section)
+     ========================================================================== -->
+<section id="blogs" style="padding: 100px 40px; background: #121214; position: relative; overflow: hidden; border-top: 1px solid rgba(172, 34, 203, 0.15);">
+  <div style="max-width: 1240px; margin: 0 auto;">
+    
+    <!-- Top Bar: Left Title, Right CTA -->
+    <div style="display: flex; align-items: flex-end; justify-content: space-between; gap: 30px; margin-bottom: 50px; flex-wrap: wrap;">
+      <div>
+        <h2 style="font-size: clamp(32px, 3.8vw, 48px); font-weight: 800; color: #FFFFFF; font-family: var(--cs-font-heading); line-height: 1.15; margin: 0;">Our Latest Insights and<br>Articles</h2>
+      </div>
+      <div style="display: flex; flex-direction: column; align-items: flex-end; gap: 8px;">
+        <span style="font-size: 13px; color: rgba(255,255,255,0.6);">Stay updated with latest insights</span>
+        <a href="#contact" class="cs-btn-primary" style="background: #003CFE; color: #FFF; font-size: 13px; font-weight: 700; padding: 10px 22px; border-radius: 8px; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0, 60, 254, 0.4);">
+          View All Blogs <span style="font-size: 15px;">→</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- 3 Blogs Grid -->
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px;">
+      
+      <!-- Blog Card 1 -->
+      <div class="cs-blog-card" style="background: #18181C; border-radius: 20px; overflow: hidden; border: 1px solid rgba(255,255,255,0.08); transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease; display: flex; flex-direction: column;">
+        <div style="height: 220px; overflow: hidden; position: relative;">
+          <img src="images/6a083d280a69f1e7668edbeb.jpg" alt="Website vs Funnel" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+        </div>
+        <div style="padding: 24px; display: flex; flex-direction: column; flex-grow: 1;">
+          <span style="font-size: 11px; font-weight: 600; color: rgba(255,255,255,0.5); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 12px;">Marketing</span>
+          <h3 style="font-size: 20px; font-weight: 700; color: #FFFFFF; font-family: var(--cs-font-heading); line-height: 1.35; margin-bottom: 12px;">Website vs Funnel: What Actually Converts Better?</h3>
+          <p style="font-size: 14px; color: rgba(255,255,255,0.6); line-height: 1.6; margin-bottom: 20px; flex-grow: 1;">Confused between a website and a funnel? Discover which one actually converts visitors into leads and how to optimize your architecture.</p>
+          <a href="#contact" style="font-size: 13px; font-weight: 700; color: #FFFFFF; text-decoration: none; display: inline-flex; align-items: center; gap: 6px; border-bottom: 1px solid rgba(255,255,255,0.2); width: fit-content; padding-bottom: 2px; transition: color 0.2s ease, border-color 0.2s ease;">Learn More <span style="font-size: 14px;">→</span></a>
+        </div>
+      </div>
+
+      <!-- Blog Card 2 -->
+      <div class="cs-blog-card" style="background: #18181C; border-radius: 20px; overflow: hidden; border: 1px solid rgba(255,255,255,0.08); transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease; display: flex; flex-direction: column;">
+        <div style="height: 220px; overflow: hidden; position: relative;">
+          <img src="images/6a085785dbe569a25d6b939c.jpg" alt="Lead Generation System" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+        </div>
+        <div style="padding: 24px; display: flex; flex-direction: column; flex-grow: 1;">
+          <span style="font-size: 11px; font-weight: 600; color: rgba(255,255,255,0.5); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 12px;">Lead Generation</span>
+          <h3 style="font-size: 20px; font-weight: 700; color: #FFFFFF; font-family: var(--cs-font-heading); line-height: 1.35; margin-bottom: 12px;">What is a Lead Generation System? (Simple Breakdown)</h3>
+          <p style="font-size: 14px; color: rgba(255,255,255,0.6); line-height: 1.6; margin-bottom: 20px; flex-grow: 1;">Struggling to get consistent leads? Learn how a lead generation system works and how it turns cold traffic into predictable sales revenue.</p>
+          <a href="#contact" style="font-size: 13px; font-weight: 700; color: #FFFFFF; text-decoration: none; display: inline-flex; align-items: center; gap: 6px; border-bottom: 1px solid rgba(255,255,255,0.2); width: fit-content; padding-bottom: 2px; transition: color 0.2s ease, border-color 0.2s ease;">Learn More <span style="font-size: 14px;">→</span></a>
+        </div>
+      </div>
+
+      <!-- Blog Card 3 -->
+      <div class="cs-blog-card" style="background: #18181C; border-radius: 20px; overflow: hidden; border: 1px solid rgba(255,255,255,0.08); transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease; display: flex; flex-direction: column;">
+        <div style="height: 220px; overflow: hidden; position: relative;">
+          <img src="images/6a0857860a69f1e766921218.jpg" alt="Why Your Ads Are Not Generating Leads" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+        </div>
+        <div style="padding: 24px; display: flex; flex-direction: column; flex-grow: 1;">
+          <span style="font-size: 11px; font-weight: 600; color: rgba(255,255,255,0.5); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 12px;">Lead Generation</span>
+          <h3 style="font-size: 20px; font-weight: 700; color: #FFFFFF; font-family: var(--cs-font-heading); line-height: 1.35; margin-bottom: 12px;">Why Your Ads Are Not Generating Leads (And How to Fix It)</h3>
+          <p style="font-size: 14px; color: rgba(255,255,255,0.6); line-height: 1.6; margin-bottom: 20px; flex-grow: 1;">Running ads but not getting leads? Discover why most campaigns fail and how a proper lead routing system maximizes your ad ROAS.</p>
+          <a href="#contact" style="font-size: 13px; font-weight: 700; color: #FFFFFF; text-decoration: none; display: inline-flex; align-items: center; gap: 6px; border-bottom: 1px solid rgba(255,255,255,0.2); width: fit-content; padding-bottom: 2px; transition: color 0.2s ease, border-color 0.2s ease;">Learn More <span style="font-size: 14px;">→</span></a>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<style>
+  /* Blog card hover animation */
+  .cs-blog-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(172, 34, 203, 0.4) !important;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5), 0 0 20px rgba(172, 34, 203, 0.2);
+  }
+  .cs-blog-card:hover img {
+    transform: scale(1.05);
+  }
+  .cs-blog-card a:hover {
+    color: #AC22CB !important;
+    border-color: #AC22CB !important;
+  }
+  /* Testimonial video play button hover */
+  .cs-testi-card button:hover {
+    background: #003CFE !important;
+    transform: translate(-50%, -50%) scale(1.15) !important;
+  }
+  .cs-testimonials-swiper .swiper-slide {
+    opacity: 0.5;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+  }
+  .cs-testimonials-swiper .swiper-slide-active {
+    opacity: 1 !important;
+    transform: scale(1.1) !important;
+    border-color: rgba(0, 60, 254, 0.6) !important;
+    box-shadow: 0 20px 45px rgba(0, 60, 254, 0.3) !important;
+    z-index: 10;
+  }
+</style>
+
+<script>
+  function toggleTestiVideo(btn) {
+    var card = btn.closest('.cs-testi-card');
+    var video = card.querySelector('video');
+    if (video.paused) {
+      // Pause all other videos
+      document.querySelectorAll('#testimonials video').forEach(function(v) { v.pause(); });
+      document.querySelectorAll('#testimonials button').forEach(function(b) { b.innerText = '▶'; });
+      video.play();
+      btn.innerText = '❚❚';
+    } else {
+      video.pause();
+      btn.innerText = '▶';
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    if (typeof Swiper !== 'undefined') {
+      var testiSwiper = new Swiper('.cs-testimonials-swiper', {
+        effect: 'coverflow',
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        initialSlide: 2,
+        coverflowEffect: {
+          rotate: 15,
+          stretch: 0,
+          depth: 120,
+          modifier: 1,
+          slideShadows: false,
+        },
+        loop: true,
+        navigation: {
+          nextEl: '.cs-testi-next',
+          prevEl: '.cs-testi-prev',
+        },
+        on: {
+          slideChange: function() {
+            var slides = this.slides;
+            var activeIdx = this.activeIndex;
+            if (slides && slides[activeIdx]) {
+              var name = slides[activeIdx].getAttribute('data-client-name') || 'Dr Javed';
+              var labelEl = document.getElementById('cs-active-client-name');
+              if (labelEl) labelEl.innerText = name;
+            }
+          }
+        }
+      });
+    }
+  });
+</script>
+
 </main>
 
-			<footer data-elementor-type="footer" data-elementor-id="7884" class="elementor elementor-7884 elementor-location-footer" data-elementor-post-type="elementor_library">
-					<section class="elementor-section elementor-top-section elementor-element elementor-element-653a951 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="653a951" data-element_type="section" data-e-type="section">
-						<div class="elementor-container elementor-column-gap-no">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-0958222" data-id="0958222" data-element_type="column" data-e-type="column" data-settings="{" background_background":"classic"}"="">
-			<div class="elementor-widget-wrap elementor-element-populated">
-					<div class="elementor-background-overlay"></div>
-						<div class="elementor-element elementor-element-8bf5860 e-transform elementor-widget elementor-widget-deensimc-smooth-text" data-id="8bf5860" data-element_type="widget" data-e-type="widget" data-settings="{" _transform_rotatez_effect":{"unit":"px","size":-4,"sizes":[]},"_transform_rotatez_effect_mobile":{"unit":"deg","size":-7,"sizes":[]},"_transform_rotatez_effect_tablet":{"unit":"deg","size":"","sizes":[]}}"="" data-widget_type="deensimc-smooth-text.default">
-				<div class="elementor-widget-container">
-							<div class="deensimc-marquee-main-container deensimc-text-marquee
-		" data-marquee-speed="15" data-track-fill="yes" data-track-item-selector=".deensimc-text-wrapper">
-			<div class="deensimc-marquee-track-wrapper">
-				<div class="deensimc-marquee-track">
-								<div class="deensimc-text-wrapper" aria-hidden="false">
-				<svg aria-hidden="true" class="e-font-icon-svg e-fas-star-of-life" viewBox="0 0 480 512" xmlns="http://www.w3.org/2000/svg"><path d="M471.99 334.43L336.06 256l135.93-78.43c7.66-4.42 10.28-14.2 5.86-21.86l-32.02-55.43c-4.42-7.65-14.21-10.28-21.87-5.86l-135.93 78.43V16c0-8.84-7.17-16-16.01-16h-64.04c-8.84 0-16.01 7.16-16.01 16v156.86L56.04 94.43c-7.66-4.42-17.45-1.79-21.87 5.86L2.15 155.71c-4.42 7.65-1.8 17.44 5.86 21.86L143.94 256 8.01 334.43c-7.66 4.42-10.28 14.21-5.86 21.86l32.02 55.43c4.42 7.65 14.21 10.27 21.87 5.86l135.93-78.43V496c0 8.84 7.17 16 16.01 16h64.04c8.84 0 16.01-7.16 16.01-16V339.14l135.93 78.43c7.66 4.42 17.45 1.8 21.87-5.86l32.02-55.43c4.42-7.65 1.8-17.43-5.86-21.85z"></path></svg>									<p class="deensimc-scroll-text">
-						Data Driven Funnels					</p>
-							</div>
-					<div class="deensimc-text-wrapper" aria-hidden="false">
-				<svg aria-hidden="true" class="e-font-icon-svg e-fas-star-of-life" viewBox="0 0 480 512" xmlns="http://www.w3.org/2000/svg"><path d="M471.99 334.43L336.06 256l135.93-78.43c7.66-4.42 10.28-14.2 5.86-21.86l-32.02-55.43c-4.42-7.65-14.21-10.28-21.87-5.86l-135.93 78.43V16c0-8.84-7.17-16-16.01-16h-64.04c-8.84 0-16.01 7.16-16.01 16v156.86L56.04 94.43c-7.66-4.42-17.45-1.79-21.87 5.86L2.15 155.71c-4.42 7.65-1.8 17.44 5.86 21.86L143.94 256 8.01 334.43c-7.66 4.42-10.28 14.21-5.86 21.86l32.02 55.43c4.42 7.65 14.21 10.27 21.87 5.86l135.93-78.43V496c0 8.84 7.17 16 16.01 16h64.04c8.84 0 16.01-7.16 16.01-16V339.14l135.93 78.43c7.66 4.42 17.45 1.8 21.87-5.86l32.02-55.43c4.42-7.65 1.8-17.43-5.86-21.85z"></path></svg>									<p class="deensimc-scroll-text">
-						 CRM &amp; Automation Setup					</p>
-							</div>
-					<div class="deensimc-text-wrapper" aria-hidden="false">
-				<svg aria-hidden="true" class="e-font-icon-svg e-fas-star-of-life" viewBox="0 0 480 512" xmlns="http://www.w3.org/2000/svg"><path d="M471.99 334.43L336.06 256l135.93-78.43c7.66-4.42 10.28-14.2 5.86-21.86l-32.02-55.43c-4.42-7.65-14.21-10.28-21.87-5.86l-135.93 78.43V16c0-8.84-7.17-16-16.01-16h-64.04c-8.84 0-16.01 7.16-16.01 16v156.86L56.04 94.43c-7.66-4.42-17.45-1.79-21.87 5.86L2.15 155.71c-4.42 7.65-1.8 17.44 5.86 21.86L143.94 256 8.01 334.43c-7.66 4.42-10.28 14.21-5.86 21.86l32.02 55.43c4.42 7.65 14.21 10.27 21.87 5.86l135.93-78.43V496c0 8.84 7.17 16 16.01 16h64.04c8.84 0 16.01-7.16 16.01-16V339.14l135.93 78.43c7.66 4.42 17.45 1.8 21.87-5.86l32.02-55.43c4.42-7.65 1.8-17.43-5.86-21.85z"></path></svg>									<p class="deensimc-scroll-text">
-						 Scalable Infrastructure					</p>
-							</div>
-					<div class="deensimc-text-wrapper" aria-hidden="false">
-				<svg aria-hidden="true" class="e-font-icon-svg e-fas-star-of-life" viewBox="0 0 480 512" xmlns="http://www.w3.org/2000/svg"><path d="M471.99 334.43L336.06 256l135.93-78.43c7.66-4.42 10.28-14.2 5.86-21.86l-32.02-55.43c-4.42-7.65-14.21-10.28-21.87-5.86l-135.93 78.43V16c0-8.84-7.17-16-16.01-16h-64.04c-8.84 0-16.01 7.16-16.01 16v156.86L56.04 94.43c-7.66-4.42-17.45-1.79-21.87 5.86L2.15 155.71c-4.42 7.65-1.8 17.44 5.86 21.86L143.94 256 8.01 334.43c-7.66 4.42-10.28 14.21-5.86 21.86l32.02 55.43c4.42 7.65 14.21 10.27 21.87 5.86l135.93-78.43V496c0 8.84 7.17 16 16.01 16h64.04c8.84 0 16.01-7.16 16.01-16V339.14l135.93 78.43c7.66 4.42 17.45 1.8 21.87-5.86l32.02-55.43c4.42-7.65 1.8-17.43-5.86-21.85z"></path></svg>									<p class="deensimc-scroll-text">
-						Conversion Focused Design					</p>
-							</div>
-					<div class="deensimc-text-wrapper" aria-hidden="false">
-				<svg aria-hidden="true" class="e-font-icon-svg e-fas-star-of-life" viewBox="0 0 480 512" xmlns="http://www.w3.org/2000/svg"><path d="M471.99 334.43L336.06 256l135.93-78.43c7.66-4.42 10.28-14.2 5.86-21.86l-32.02-55.43c-4.42-7.65-14.21-10.28-21.87-5.86l-135.93 78.43V16c0-8.84-7.17-16-16.01-16h-64.04c-8.84 0-16.01 7.16-16.01 16v156.86L56.04 94.43c-7.66-4.42-17.45-1.79-21.87 5.86L2.15 155.71c-4.42 7.65-1.8 17.44 5.86 21.86L143.94 256 8.01 334.43c-7.66 4.42-10.28 14.21-5.86 21.86l32.02 55.43c4.42 7.65 14.21 10.27 21.87 5.86l135.93-78.43V496c0 8.84 7.17 16 16.01 16h64.04c8.84 0 16.01-7.16 16.01-16V339.14l135.93 78.43c7.66 4.42 17.45 1.8 21.87-5.86l32.02-55.43c4.42-7.65 1.8-17.43-5.86-21.85z"></path></svg>									<p class="deensimc-scroll-text">
-						High Security &amp; Compliance					</p>
-							</div>
-					<div class="deensimc-text-wrapper" aria-hidden="false">
-				<svg aria-hidden="true" class="e-font-icon-svg e-fas-star-of-life" viewBox="0 0 480 512" xmlns="http://www.w3.org/2000/svg"><path d="M471.99 334.43L336.06 256l135.93-78.43c7.66-4.42 10.28-14.2 5.86-21.86l-32.02-55.43c-4.42-7.65-14.21-10.28-21.87-5.86l-135.93 78.43V16c0-8.84-7.17-16-16.01-16h-64.04c-8.84 0-16.01 7.16-16.01 16v156.86L56.04 94.43c-7.66-4.42-17.45-1.79-21.87 5.86L2.15 155.71c-4.42 7.65-1.8 17.44 5.86 21.86L143.94 256 8.01 334.43c-7.66 4.42-10.28 14.21-5.86 21.86l32.02 55.43c4.42 7.65 14.21 10.27 21.87 5.86l135.93-78.43V496c0 8.84 7.17 16 16.01 16h64.04c8.84 0 16.01-7.16 16.01-16V339.14l135.93 78.43c7.66 4.42 17.45 1.8 21.87-5.86l32.02-55.43c4.42-7.65 1.8-17.43-5.86-21.85z"></path></svg>									<p class="deensimc-scroll-text">
-						 Advanced Analytics					</p>
-							</div>
-					<div class="deensimc-text-wrapper" aria-hidden="false">
-				<svg aria-hidden="true" class="e-font-icon-svg e-fas-star-of-life" viewBox="0 0 480 512" xmlns="http://www.w3.org/2000/svg"><path d="M471.99 334.43L336.06 256l135.93-78.43c7.66-4.42 10.28-14.2 5.86-21.86l-32.02-55.43c-4.42-7.65-14.21-10.28-21.87-5.86l-135.93 78.43V16c0-8.84-7.17-16-16.01-16h-64.04c-8.84 0-16.01 7.16-16.01 16v156.86L56.04 94.43c-7.66-4.42-17.45-1.79-21.87 5.86L2.15 155.71c-4.42 7.65-1.8 17.44 5.86 21.86L143.94 256 8.01 334.43c-7.66 4.42-10.28 14.21-5.86 21.86l32.02 55.43c4.42 7.65 14.21 10.27 21.87 5.86l135.93-78.43V496c0 8.84 7.17 16 16.01 16h64.04c8.84 0 16.01-7.16 16.01-16V339.14l135.93 78.43c7.66 4.42 17.45 1.8 21.87-5.86l32.02-55.43c4.42-7.65 1.8-17.43-5.86-21.85z"></path></svg>									<p class="deensimc-scroll-text">
-						Fast Performance					</p>
-							</div>
-					<div class="deensimc-text-wrapper" aria-hidden="false">
-				<svg aria-hidden="true" class="e-font-icon-svg e-fas-star-of-life" viewBox="0 0 480 512" xmlns="http://www.w3.org/2000/svg"><path d="M471.99 334.43L336.06 256l135.93-78.43c7.66-4.42 10.28-14.2 5.86-21.86l-32.02-55.43c-4.42-7.65-14.21-10.28-21.87-5.86l-135.93 78.43V16c0-8.84-7.17-16-16.01-16h-64.04c-8.84 0-16.01 7.16-16.01 16v156.86L56.04 94.43c-7.66-4.42-17.45-1.79-21.87 5.86L2.15 155.71c-4.42 7.65-1.8 17.44 5.86 21.86L143.94 256 8.01 334.43c-7.66 4.42-10.28 14.21-5.86 21.86l32.02 55.43c4.42 7.65 14.21 10.27 21.87 5.86l135.93-78.43V496c0 8.84 7.17 16 16.01 16h64.04c8.84 0 16.01-7.16 16.01-16V339.14l135.93 78.43c7.66 4.42 17.45 1.8 21.87-5.86l32.02-55.43c4.42-7.65 1.8-17.43-5.86-21.85z"></path></svg>									<p class="deensimc-scroll-text">
-						Seamless Integrations					</p>
-							</div>
-						</div>
-				<div aria-hidden="true" class="deensimc-marquee-track">
-								<div class="deensimc-text-wrapper" aria-hidden="false">
-				<svg aria-hidden="true" class="e-font-icon-svg e-fas-star-of-life" viewBox="0 0 480 512" xmlns="http://www.w3.org/2000/svg"><path d="M471.99 334.43L336.06 256l135.93-78.43c7.66-4.42 10.28-14.2 5.86-21.86l-32.02-55.43c-4.42-7.65-14.21-10.28-21.87-5.86l-135.93 78.43V16c0-8.84-7.17-16-16.01-16h-64.04c-8.84 0-16.01 7.16-16.01 16v156.86L56.04 94.43c-7.66-4.42-17.45-1.79-21.87 5.86L2.15 155.71c-4.42 7.65-1.8 17.44 5.86 21.86L143.94 256 8.01 334.43c-7.66 4.42-10.28 14.21-5.86 21.86l32.02 55.43c4.42 7.65 14.21 10.27 21.87 5.86l135.93-78.43V496c0 8.84 7.17 16 16.01 16h64.04c8.84 0 16.01-7.16 16.01-16V339.14l135.93 78.43c7.66 4.42 17.45 1.8 21.87-5.86l32.02-55.43c4.42-7.65 1.8-17.43-5.86-21.85z"></path></svg>									<p class="deensimc-scroll-text">
-						Data Driven Funnels					</p>
-							</div>
-					<div class="deensimc-text-wrapper" aria-hidden="false">
-				<svg aria-hidden="true" class="e-font-icon-svg e-fas-star-of-life" viewBox="0 0 480 512" xmlns="http://www.w3.org/2000/svg"><path d="M471.99 334.43L336.06 256l135.93-78.43c7.66-4.42 10.28-14.2 5.86-21.86l-32.02-55.43c-4.42-7.65-14.21-10.28-21.87-5.86l-135.93 78.43V16c0-8.84-7.17-16-16.01-16h-64.04c-8.84 0-16.01 7.16-16.01 16v156.86L56.04 94.43c-7.66-4.42-17.45-1.79-21.87 5.86L2.15 155.71c-4.42 7.65-1.8 17.44 5.86 21.86L143.94 256 8.01 334.43c-7.66 4.42-10.28 14.21-5.86 21.86l32.02 55.43c4.42 7.65 14.21 10.27 21.87 5.86l135.93-78.43V496c0 8.84 7.17 16 16.01 16h64.04c8.84 0 16.01-7.16 16.01-16V339.14l135.93 78.43c7.66 4.42 17.45 1.8 21.87-5.86l32.02-55.43c4.42-7.65 1.8-17.43-5.86-21.85z"></path></svg>									<p class="deensimc-scroll-text">
-						 CRM &amp; Automation Setup					</p>
-							</div>
-					<div class="deensimc-text-wrapper" aria-hidden="false">
-				<svg aria-hidden="true" class="e-font-icon-svg e-fas-star-of-life" viewBox="0 0 480 512" xmlns="http://www.w3.org/2000/svg"><path d="M471.99 334.43L336.06 256l135.93-78.43c7.66-4.42 10.28-14.2 5.86-21.86l-32.02-55.43c-4.42-7.65-14.21-10.28-21.87-5.86l-135.93 78.43V16c0-8.84-7.17-16-16.01-16h-64.04c-8.84 0-16.01 7.16-16.01 16v156.86L56.04 94.43c-7.66-4.42-17.45-1.79-21.87 5.86L2.15 155.71c-4.42 7.65-1.8 17.44 5.86 21.86L143.94 256 8.01 334.43c-7.66 4.42-10.28 14.21-5.86 21.86l32.02 55.43c4.42 7.65 14.21 10.27 21.87 5.86l135.93-78.43V496c0 8.84 7.17 16 16.01 16h64.04c8.84 0 16.01-7.16 16.01-16V339.14l135.93 78.43c7.66 4.42 17.45 1.8 21.87-5.86l32.02-55.43c4.42-7.65 1.8-17.43-5.86-21.85z"></path></svg>									<p class="deensimc-scroll-text">
-						 Scalable Infrastructure					</p>
-							</div>
-					<div class="deensimc-text-wrapper" aria-hidden="false">
-				<svg aria-hidden="true" class="e-font-icon-svg e-fas-star-of-life" viewBox="0 0 480 512" xmlns="http://www.w3.org/2000/svg"><path d="M471.99 334.43L336.06 256l135.93-78.43c7.66-4.42 10.28-14.2 5.86-21.86l-32.02-55.43c-4.42-7.65-14.21-10.28-21.87-5.86l-135.93 78.43V16c0-8.84-7.17-16-16.01-16h-64.04c-8.84 0-16.01 7.16-16.01 16v156.86L56.04 94.43c-7.66-4.42-17.45-1.79-21.87 5.86L2.15 155.71c-4.42 7.65-1.8 17.44 5.86 21.86L143.94 256 8.01 334.43c-7.66 4.42-10.28 14.21-5.86 21.86l32.02 55.43c4.42 7.65 14.21 10.27 21.87 5.86l135.93-78.43V496c0 8.84 7.17 16 16.01 16h64.04c8.84 0 16.01-7.16 16.01-16V339.14l135.93 78.43c7.66 4.42 17.45 1.8 21.87-5.86l32.02-55.43c4.42-7.65 1.8-17.43-5.86-21.85z"></path></svg>									<p class="deensimc-scroll-text">
-						Conversion Focused Design					</p>
-							</div>
-					<div class="deensimc-text-wrapper" aria-hidden="false">
-				<svg aria-hidden="true" class="e-font-icon-svg e-fas-star-of-life" viewBox="0 0 480 512" xmlns="http://www.w3.org/2000/svg"><path d="M471.99 334.43L336.06 256l135.93-78.43c7.66-4.42 10.28-14.2 5.86-21.86l-32.02-55.43c-4.42-7.65-14.21-10.28-21.87-5.86l-135.93 78.43V16c0-8.84-7.17-16-16.01-16h-64.04c-8.84 0-16.01 7.16-16.01 16v156.86L56.04 94.43c-7.66-4.42-17.45-1.79-21.87 5.86L2.15 155.71c-4.42 7.65-1.8 17.44 5.86 21.86L143.94 256 8.01 334.43c-7.66 4.42-10.28 14.21-5.86 21.86l32.02 55.43c4.42 7.65 14.21 10.27 21.87 5.86l135.93-78.43V496c0 8.84 7.17 16 16.01 16h64.04c8.84 0 16.01-7.16 16.01-16V339.14l135.93 78.43c7.66 4.42 17.45 1.8 21.87-5.86l32.02-55.43c4.42-7.65 1.8-17.43-5.86-21.85z"></path></svg>									<p class="deensimc-scroll-text">
-						High Security &amp; Compliance					</p>
-							</div>
-					<div class="deensimc-text-wrapper" aria-hidden="false">
-				<svg aria-hidden="true" class="e-font-icon-svg e-fas-star-of-life" viewBox="0 0 480 512" xmlns="http://www.w3.org/2000/svg"><path d="M471.99 334.43L336.06 256l135.93-78.43c7.66-4.42 10.28-14.2 5.86-21.86l-32.02-55.43c-4.42-7.65-14.21-10.28-21.87-5.86l-135.93 78.43V16c0-8.84-7.17-16-16.01-16h-64.04c-8.84 0-16.01 7.16-16.01 16v156.86L56.04 94.43c-7.66-4.42-17.45-1.79-21.87 5.86L2.15 155.71c-4.42 7.65-1.8 17.44 5.86 21.86L143.94 256 8.01 334.43c-7.66 4.42-10.28 14.21-5.86 21.86l32.02 55.43c4.42 7.65 14.21 10.27 21.87 5.86l135.93-78.43V496c0 8.84 7.17 16 16.01 16h64.04c8.84 0 16.01-7.16 16.01-16V339.14l135.93 78.43c7.66 4.42 17.45 1.8 21.87-5.86l32.02-55.43c4.42-7.65 1.8-17.43-5.86-21.85z"></path></svg>									<p class="deensimc-scroll-text">
-						 Advanced Analytics					</p>
-							</div>
-					<div class="deensimc-text-wrapper" aria-hidden="false">
-				<svg aria-hidden="true" class="e-font-icon-svg e-fas-star-of-life" viewBox="0 0 480 512" xmlns="http://www.w3.org/2000/svg"><path d="M471.99 334.43L336.06 256l135.93-78.43c7.66-4.42 10.28-14.2 5.86-21.86l-32.02-55.43c-4.42-7.65-14.21-10.28-21.87-5.86l-135.93 78.43V16c0-8.84-7.17-16-16.01-16h-64.04c-8.84 0-16.01 7.16-16.01 16v156.86L56.04 94.43c-7.66-4.42-17.45-1.79-21.87 5.86L2.15 155.71c-4.42 7.65-1.8 17.44 5.86 21.86L143.94 256 8.01 334.43c-7.66 4.42-10.28 14.21-5.86 21.86l32.02 55.43c4.42 7.65 14.21 10.27 21.87 5.86l135.93-78.43V496c0 8.84 7.17 16 16.01 16h64.04c8.84 0 16.01-7.16 16.01-16V339.14l135.93 78.43c7.66 4.42 17.45 1.8 21.87-5.86l32.02-55.43c4.42-7.65 1.8-17.43-5.86-21.85z"></path></svg>									<p class="deensimc-scroll-text">
-						Fast Performance					</p>
-							</div>
-					<div class="deensimc-text-wrapper" aria-hidden="false">
-				<svg aria-hidden="true" class="e-font-icon-svg e-fas-star-of-life" viewBox="0 0 480 512" xmlns="http://www.w3.org/2000/svg"><path d="M471.99 334.43L336.06 256l135.93-78.43c7.66-4.42 10.28-14.2 5.86-21.86l-32.02-55.43c-4.42-7.65-14.21-10.28-21.87-5.86l-135.93 78.43V16c0-8.84-7.17-16-16.01-16h-64.04c-8.84 0-16.01 7.16-16.01 16v156.86L56.04 94.43c-7.66-4.42-17.45-1.79-21.87 5.86L2.15 155.71c-4.42 7.65-1.8 17.44 5.86 21.86L143.94 256 8.01 334.43c-7.66 4.42-10.28 14.21-5.86 21.86l32.02 55.43c4.42 7.65 14.21 10.27 21.87 5.86l135.93-78.43V496c0 8.84 7.17 16 16.01 16h64.04c8.84 0 16.01-7.16 16.01-16V339.14l135.93 78.43c7.66 4.42 17.45 1.8 21.87-5.86l32.02-55.43c4.42-7.65 1.8-17.43-5.86-21.85z"></path></svg>									<p class="deensimc-scroll-text">
-						Seamless Integrations					</p>
-							</div>
-						</div>
-			</div>
-		</div>
-				</div>
-				</div>
-				<noscript>
-			<div class="deensimc-noscript-notice" role="note">
-				This section requires JavaScript to load properly. Please enable JavaScript in your browser and reload the page.			</div>
-		</noscript>
-		<div class="elementor-element elementor-element-74c29de e-transform elementor-widget elementor-widget-deensimc-smooth-text" data-id="74c29de" data-element_type="widget" data-e-type="widget" data-settings="{" _transform_rotatez_effect":{"unit":"px","size":4,"sizes":[]},"_transform_rotatez_effect_mobile":{"unit":"deg","size":6,"sizes":[]},"_transform_rotatez_effect_tablet":{"unit":"deg","size":"","sizes":[]}}"="" data-widget_type="deensimc-smooth-text.default">
-				<div class="elementor-widget-container">
-							<div class="deensimc-marquee-main-container deensimc-text-marquee
-		deensimc-marquee-reverse" data-marquee-speed="15" data-track-fill="yes" data-track-item-selector=".deensimc-text-wrapper">
-			<div class="deensimc-marquee-track-wrapper">
-				<div class="deensimc-marquee-track">
-								<div class="deensimc-text-wrapper" aria-hidden="false">
-				<svg aria-hidden="true" class="e-font-icon-svg e-fas-star-of-life" viewBox="0 0 480 512" xmlns="http://www.w3.org/2000/svg"><path d="M471.99 334.43L336.06 256l135.93-78.43c7.66-4.42 10.28-14.2 5.86-21.86l-32.02-55.43c-4.42-7.65-14.21-10.28-21.87-5.86l-135.93 78.43V16c0-8.84-7.17-16-16.01-16h-64.04c-8.84 0-16.01 7.16-16.01 16v156.86L56.04 94.43c-7.66-4.42-17.45-1.79-21.87 5.86L2.15 155.71c-4.42 7.65-1.8 17.44 5.86 21.86L143.94 256 8.01 334.43c-7.66 4.42-10.28 14.21-5.86 21.86l32.02 55.43c4.42 7.65 14.21 10.27 21.87 5.86l135.93-78.43V496c0 8.84 7.17 16 16.01 16h64.04c8.84 0 16.01-7.16 16.01-16V339.14l135.93 78.43c7.66 4.42 17.45 1.8 21.87-5.86l32.02-55.43c4.42-7.65 1.8-17.43-5.86-21.85z"></path></svg>									<p class="deensimc-scroll-text">
-						CodiceSync — Smarter Digital Solutions. Built for Growth.					</p>
-							</div>
-						</div>
-				<div aria-hidden="true" class="deensimc-marquee-track">
-								<div class="deensimc-text-wrapper" aria-hidden="false">
-				<svg aria-hidden="true" class="e-font-icon-svg e-fas-star-of-life" viewBox="0 0 480 512" xmlns="http://www.w3.org/2000/svg"><path d="M471.99 334.43L336.06 256l135.93-78.43c7.66-4.42 10.28-14.2 5.86-21.86l-32.02-55.43c-4.42-7.65-14.21-10.28-21.87-5.86l-135.93 78.43V16c0-8.84-7.17-16-16.01-16h-64.04c-8.84 0-16.01 7.16-16.01 16v156.86L56.04 94.43c-7.66-4.42-17.45-1.79-21.87 5.86L2.15 155.71c-4.42 7.65-1.8 17.44 5.86 21.86L143.94 256 8.01 334.43c-7.66 4.42-10.28 14.21-5.86 21.86l32.02 55.43c4.42 7.65 14.21 10.27 21.87 5.86l135.93-78.43V496c0 8.84 7.17 16 16.01 16h64.04c8.84 0 16.01-7.16 16.01-16V339.14l135.93 78.43c7.66 4.42 17.45 1.8 21.87-5.86l32.02-55.43c4.42-7.65 1.8-17.43-5.86-21.85z"></path></svg>									<p class="deensimc-scroll-text">
-						CodiceSync — Smarter Digital Solutions. Built for Growth.					</p>
-							</div>
-						</div>
-			</div>
-		</div>
-				</div>
-				</div>
-				<noscript>
-			<div class="deensimc-noscript-notice" role="note">
-				This section requires JavaScript to load properly. Please enable JavaScript in your browser and reload the page.			</div>
-		</noscript>
-		<section class="elementor-section elementor-inner-section elementor-element elementor-element-3e9d357 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="3e9d357" data-element_type="section" data-e-type="section" data-settings="{" background_background":"classic"}"="">
-						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-91e87e6" data-id="91e87e6" data-element_type="column" data-e-type="column" data-settings="{" background_background":"classic"}"="">
-			<div class="elementor-widget-wrap">
-							</div>
-		</div>
-					</div>
-		</section>
-					</div>
-		</div>
-					</div>
-		</section>
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-d2c927d elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="d2c927d" data-element_type="section" data-e-type="section" data-settings="{" background_background":"classic"}"="">
-							<div class="elementor-background-overlay"></div>
-							<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-89cd375" data-id="89cd375" data-element_type="column" data-e-type="column" data-settings="{" background_background":"classic"}"="">
-			<div class="elementor-widget-wrap elementor-element-populated">
-						<section class="elementor-section elementor-inner-section elementor-element elementor-element-b700120 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="b700120" data-element_type="section" data-e-type="section" data-settings="{" background_background":"classic"}"="">
-							<div class="elementor-background-overlay"></div>
-							<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-0e1661b" data-id="0e1661b" data-element_type="column" data-e-type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-27e96e9 elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading" data-id="27e96e9" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
-					<h2 class="elementor-heading-title elementor-size-default">Turn Your Business Into a<b> System</b></h2>				</div>
-				<div class="elementor-element elementor-element-c025985 elementor-align-left elementor-mobile-align-left elementor-widget elementor-widget-button" data-id="c025985" data-element_type="widget" data-e-type="widget" id="markhor" data-widget_type="button.default">
-										<a class="elementor-button elementor-button-link elementor-size-sm" href="https://10xdigitalventures.com/book-your-appointment/">
-						<span class="elementor-button-content-wrapper">
-						<span class="elementor-button-icon">
-				<i aria-hidden="true" class="icon icon-right-arrow"></i>			</span>
-									<span class="elementor-button-text" data-markhor-done="1"><span class="markhor-inner"><span class="markhor-t">Get Started</span><span class="markhor-t markhor-t2">Get Started</span></span></span>
-					</span>
-					</a>
-								</div>
-					</div>
-		</div>
-				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-6943bf5" data-id="6943bf5" data-element_type="column" data-e-type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-						<section class="elementor-section elementor-inner-section elementor-element elementor-element-dbb71c2 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="dbb71c2" data-element_type="section" data-e-type="section">
-						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-6dbac5f" data-id="6dbac5f" data-element_type="column" data-e-type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-e1d748a elementor-widget elementor-widget-heading" data-id="e1d748a" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
-					<h2 class="elementor-heading-title elementor-size-default">Quick Links</h2>				</div>
-				<div class="elementor-element elementor-element-6a852f2 elementor-mobile-align-start elementor-list-item-link-inline elementor-icon-list--layout-traditional elementor-widget elementor-widget-icon-list" data-id="6a852f2" data-element_type="widget" data-e-type="widget" id="lalaicon" data-widget_type="icon-list.default">
-							<ul class="elementor-icon-list-items">
-							<li class="elementor-icon-list-item">
-											<a href="https://10xdigitalventures.com/">
+			<!-- ==========================================================================
+     CodiceSync - Official Glassmorphic Footer
+     ========================================================================== -->
+<footer style="background: #0E0E10; padding: 60px 20px 40px 20px; position: relative; overflow: hidden; border-top: 1px solid rgba(172, 34, 203, 0.2);">
+  
+  <!-- Giant Background Marquee / Watermark -->
+  <div style="position: absolute; bottom: 0; left: 0; width: 100%; pointer-events: none; opacity: 0.04; overflow: hidden; white-space: nowrap; user-select: none;">
+    <span style="font-size: 160px; font-weight: 900; color: #FFFFFF; font-family: var(--cs-font-heading); text-transform: uppercase; letter-spacing: -6px;">
+      AUTOMATE • SCALE • TRANSFORM • CODE
+    </span>
+  </div>
 
-											<span class="elementor-icon-list-text" data-lalaicon-done="1"><span class="lalaicon-inner"><span class="lalaicon-t">Home</span><span class="lalaicon-t lalaicon-t2">Home</span></span></span>
-											</a>
-									</li>
-								<li class="elementor-icon-list-item">
-											<a href="https://10xdigitalventures.com/about-us/">
+  <div style="max-width: 1280px; margin: 0 auto; position: relative; z-index: 2;">
+    
+    <!-- Main Glassmorphic Container -->
+    <div style="background: rgba(42, 42, 51, 0.85); backdrop-filter: blur(20px); border: 1px solid rgba(172, 34, 203, 0.35); border-radius: 26px; padding: 50px 40px; box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);">
+      
+      <div style="display: grid; grid-template-columns: 1.2fr 2fr; gap: 50px; align-items: start;">
+        
+        <!-- Left Column: Branding CTA -->
+        <div style="display: flex; flex-direction: column; justify-content: space-between; height: 100%;">
+          <div>
+            <h2 style="font-size: 38px; font-weight: 800; color: #FFFFFF; line-height: 1.18; letter-spacing: -1px; font-family: var(--cs-font-heading); margin-bottom: 20px;">
+              Turn Your Business<br>Into a <span style="color: #AC22CB;">System</span>
+            </h2>
+            <p style="color: #D4C2DF; font-size: 15px; max-width: 320px; line-height: 1.5; margin-bottom: 30px;">
+              Build custom software, automate workflows, and scale predictable growth with CodiceSync.
+            </p>
+          </div>
+          <div id="markhor">
+            <a href="#contact" class="cs-btn-primary" style="padding: 14px 30px; font-size: 15px; font-weight: 700; border-radius: 10px; text-decoration: none; display: inline-flex; align-items: center; gap: 8px;">
+              Get Started <span style="font-size: 16px;">&rarr;</span>
+            </a>
+          </div>
+        </div>
 
-											<span class="elementor-icon-list-text" data-lalaicon-done="1"><span class="lalaicon-inner"><span class="lalaicon-t">About Us</span><span class="lalaicon-t lalaicon-t2">About Us</span></span></span>
-											</a>
-									</li>
-								<li class="elementor-icon-list-item">
-											<a href="https://10xdigitalventures.com/solutions/">
+        <!-- Right Column: 4 Links Columns Grid -->
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 30px;">
+          
+          <!-- Quick Links -->
+          <div>
+            <h3 style="font-size: 16px; font-weight: 700; color: #FFFFFF; margin-bottom: 18px; font-family: var(--cs-font-heading);">Quick Links</h3>
+            <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px; font-size: 14px;">
+              <li><a href="#hero" style="color: #D4C2DF; text-decoration: none; transition: color 0.3s ease;" onmouseover="this.style.color='#AC22CB';" onmouseout="this.style.color='#D4C2DF';">Home</a></li>
+              <li><a href="#about" style="color: #D4C2DF; text-decoration: none; transition: color 0.3s ease;" onmouseover="this.style.color='#AC22CB';" onmouseout="this.style.color='#D4C2DF';">About Us</a></li>
+              <li><a href="#projects" style="color: #D4C2DF; text-decoration: none; transition: color 0.3s ease;" onmouseover="this.style.color='#AC22CB';" onmouseout="this.style.color='#D4C2DF';">Case Studies</a></li>
+              <li><a href="#workflow" style="color: #D4C2DF; text-decoration: none; transition: color 0.3s ease;" onmouseover="this.style.color='#AC22CB';" onmouseout="this.style.color='#D4C2DF';">Workflow</a></li>
+              <li><a href="#contact" style="color: #D4C2DF; text-decoration: none; transition: color 0.3s ease;" onmouseover="this.style.color='#AC22CB';" onmouseout="this.style.color='#D4C2DF';">Contact</a></li>
+            </ul>
+          </div>
 
-											<span class="elementor-icon-list-text" data-lalaicon-done="1"><span class="lalaicon-inner"><span class="lalaicon-t">Solutions</span><span class="lalaicon-t lalaicon-t2">Solutions</span></span></span>
-											</a>
-									</li>
-								<li class="elementor-icon-list-item">
-											<a href="https://10xdigitalventures.com/case-studies/">
+          <!-- Services -->
+          <div>
+            <h3 style="font-size: 16px; font-weight: 700; color: #FFFFFF; margin-bottom: 18px; font-family: var(--cs-font-heading);">Services</h3>
+            <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px; font-size: 14px;">
+              <li><a href="#contact" style="color: #D4C2DF; text-decoration: none; transition: color 0.3s ease;" onmouseover="this.style.color='#AC22CB';" onmouseout="this.style.color='#D4C2DF';">Web Applications</a></li>
+              <li><a href="#contact" style="color: #D4C2DF; text-decoration: none; transition: color 0.3s ease;" onmouseover="this.style.color='#AC22CB';" onmouseout="this.style.color='#D4C2DF';">AI Automations</a></li>
+              <li><a href="#contact" style="color: #D4C2DF; text-decoration: none; transition: color 0.3s ease;" onmouseover="this.style.color='#AC22CB';" onmouseout="this.style.color='#D4C2DF';">ERP &amp; POS Systems</a></li>
+              <li><a href="#contact" style="color: #D4C2DF; text-decoration: none; transition: color 0.3s ease;" onmouseover="this.style.color='#AC22CB';" onmouseout="this.style.color='#D4C2DF';">Mobile Software</a></li>
+              <li><a href="#contact" style="color: #D4C2DF; text-decoration: none; transition: color 0.3s ease;" onmouseover="this.style.color='#AC22CB';" onmouseout="this.style.color='#D4C2DF';">Custom Engineering</a></li>
+            </ul>
+          </div>
 
-											<span class="elementor-icon-list-text" data-lalaicon-done="1"><span class="lalaicon-inner"><span class="lalaicon-t">Case Studies</span><span class="lalaicon-t lalaicon-t2">Case Studies</span></span></span>
-											</a>
-									</li>
-								<li class="elementor-icon-list-item">
-											<a href="https://10xdigitalventures.com/blogs/">
+          <!-- Contact Info -->
+          <div>
+            <h3 style="font-size: 16px; font-weight: 700; color: #FFFFFF; margin-bottom: 18px; font-family: var(--cs-font-heading);">Contact Info</h3>
+            <div style="display: flex; flex-direction: column; gap: 10px; font-size: 14px; color: #D4C2DF;">
+              <a href="tel:+923214530103" style="color: #D4C2DF; text-decoration: none; transition: color 0.3s ease;" onmouseover="this.style.color='#AC22CB';" onmouseout="this.style.color='#D4C2DF';">+92 321 4530103</a>
+              <a href="mailto:codicesync@gmail.com" style="color: #D4C2DF; text-decoration: none; transition: color 0.3s ease;" onmouseover="this.style.color='#AC22CB';" onmouseout="this.style.color='#D4C2DF';">codicesync@gmail.com</a>
+              <span>20 Block, Sargodha, Pakistan</span>
+            </div>
+          </div>
 
-											<span class="elementor-icon-list-text" data-lalaicon-done="1"><span class="lalaicon-inner"><span class="lalaicon-t">Blogs</span><span class="lalaicon-t lalaicon-t2">Blogs</span></span></span>
-											</a>
-									</li>
-						</ul>
-						</div>
-					</div>
-		</div>
-				<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-745b9d7" data-id="745b9d7" data-element_type="column" data-e-type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-bbb1e20 elementor-widget elementor-widget-heading" data-id="bbb1e20" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
-					<h2 class="elementor-heading-title elementor-size-default">Services</h2>				</div>
-				<div class="elementor-element elementor-element-d60a2a0 elementor-mobile-align-start elementor-list-item-link-inline elementor-icon-list--layout-traditional elementor-widget elementor-widget-icon-list" data-id="d60a2a0" data-element_type="widget" data-e-type="widget" id="lalaicon" data-widget_type="icon-list.default">
-							<ul class="elementor-icon-list-items">
-							<li class="elementor-icon-list-item">
-											<a href="https://10xdigitalventures.com/solutions/business-growth-system/">
+          <!-- Social Media -->
+          <div>
+            <h3 style="font-size: 16px; font-weight: 700; color: #FFFFFF; margin-bottom: 18px; font-family: var(--cs-font-heading);">Social Media</h3>
+            <div style="display: flex; gap: 12px; align-items: center;">
+              <a href="#" style="width: 38px; height: 38px; border-radius: 50%; background: #FFFFFF; color: #121214; display: flex; align-items: center; justify-content: center; font-weight: 800; text-decoration: none; transition: transform 0.3s ease, background 0.3s ease, color 0.3s ease;" onmouseover="this.style.transform='scale(1.1)'; this.style.background='#AC22CB'; this.style.color='#FFF';" onmouseout="this.style.transform='scale(1)'; this.style.background='#FFF'; this.style.color='#121214';">f</a>
+              <a href="#" style="width: 38px; height: 38px; border-radius: 50%; background: #FFFFFF; color: #121214; display: flex; align-items: center; justify-content: center; font-weight: 800; text-decoration: none; transition: transform 0.3s ease, background 0.3s ease, color 0.3s ease;" onmouseover="this.style.transform='scale(1.1)'; this.style.background='#AC22CB'; this.style.color='#FFF';" onmouseout="this.style.transform='scale(1)'; this.style.background='#FFF'; this.style.color='#121214';">ig</a>
+              <a href="#" style="width: 38px; height: 38px; border-radius: 50%; background: #FFFFFF; color: #121214; display: flex; align-items: center; justify-content: center; font-weight: 800; text-decoration: none; transition: transform 0.3s ease, background 0.3s ease, color 0.3s ease;" onmouseover="this.style.transform='scale(1.1)'; this.style.background='#AC22CB'; this.style.color='#FFF';" onmouseout="this.style.transform='scale(1)'; this.style.background='#FFF'; this.style.color='#121214';">in</a>
+            </div>
+          </div>
 
-											<span class="elementor-icon-list-text" data-lalaicon-done="1"><span class="lalaicon-inner"><span class="lalaicon-t">Business Growth System</span><span class="lalaicon-t lalaicon-t2">Business Growth System</span></span></span>
-											</a>
-									</li>
-								<li class="elementor-icon-list-item">
-											<a href="https://10xdigitalventures.com/solutions/lead-nurturing-system/">
+        </div>
 
-											<span class="elementor-icon-list-text" data-lalaicon-done="1"><span class="lalaicon-inner"><span class="lalaicon-t">Lead Nurturing System</span><span class="lalaicon-t lalaicon-t2">Lead Nurturing System</span></span></span>
-											</a>
-									</li>
-								<li class="elementor-icon-list-item">
-											<a href="https://10xdigitalventures.com/solutions/ai-automation-system/">
+      </div>
 
-											<span class="elementor-icon-list-text" data-lalaicon-done="1"><span class="lalaicon-inner"><span class="lalaicon-t">AI Automation System</span><span class="lalaicon-t lalaicon-t2">AI Automation System</span></span></span>
-											</a>
-									</li>
-								<li class="elementor-icon-list-item">
-											<a href="https://10xdigitalventures.com/solutions/personal-brand-positioning/">
+      <!-- Copyright Sub-Footer Bar -->
+      <div style="border-top: 1px solid rgba(255, 255, 255, 0.1); margin-top: 40px; padding-top: 24px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px; font-size: 13px; color: rgba(212, 194, 223, 0.7);">
+        <div>&copy; 2026 CodiceSync. All rights reserved.</div>
+        <div style="display: flex; gap: 20px;">
+          <a href="#" style="color: rgba(212, 194, 223, 0.7); text-decoration: none;">Privacy Policy</a>
+          <a href="#" style="color: rgba(212, 194, 223, 0.7); text-decoration: none;">Terms of Service</a>
+        </div>
+      </div>
 
-											<span class="elementor-icon-list-text" data-lalaicon-done="1"><span class="lalaicon-inner"><span class="lalaicon-t">Personal Brand Positioning</span><span class="lalaicon-t lalaicon-t2">Personal Brand Positioning</span></span></span>
-											</a>
-									</li>
-								<li class="elementor-icon-list-item">
-											<a href="https://10xdigitalventures.com/solutions/keynote-events-workshops/">
+    </div>
 
-											<span class="elementor-icon-list-text" data-lalaicon-done="1"><span class="lalaicon-inner"><span class="lalaicon-t">Keynote Events &amp; Workshops</span><span class="lalaicon-t lalaicon-t2">Keynote Events &amp; Workshops</span></span></span>
-											</a>
-									</li>
-								<li class="elementor-icon-list-item">
-											<a href="https://10xdigitalventures.com/solutions/influencer-collaborations/">
-
-											<span class="elementor-icon-list-text" data-lalaicon-done="1"><span class="lalaicon-inner"><span class="lalaicon-t">Influencer Collaboration</span><span class="lalaicon-t lalaicon-t2">Influencer Collaboration</span></span></span>
-											</a>
-									</li>
-						</ul>
-						</div>
-					</div>
-		</div>
-				<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-af7472c" data-id="af7472c" data-element_type="column" data-e-type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-eec445f elementor-widget elementor-widget-heading" data-id="eec445f" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
-					<h2 class="elementor-heading-title elementor-size-default">Contact Info</h2>				</div>
-				<div class="elementor-element elementor-element-0eb3637 elementor-mobile-align-start elementor-list-item-link-inline elementor-icon-list--layout-traditional elementor-widget elementor-widget-icon-list" data-id="0eb3637" data-element_type="widget" data-e-type="widget" data-widget_type="icon-list.default">
-							<ul class="elementor-icon-list-items">
-							<li class="elementor-icon-list-item">
-											<a href="tel:+923214530103">
-
-											<span class="elementor-icon-list-text">+92 321 4530103</span>
-											</a>
-									</li>
-								<li class="elementor-icon-list-item">
-											<a href="mailto:codicesync@gmail.com">
-
-											<span class="elementor-icon-list-text">codicesync@gmail.com</span>
-											</a>
-									</li>
-								<li class="elementor-icon-list-item">
-											<a href="https://maps.app.goo.gl/3vUvG7tyRCX5aUfd9">
-
-											<span class="elementor-icon-list-text">20 Block, Sargodha, Pakistan</span>
-											</a>
-									</li>
-						</ul>
-						</div>
-					</div>
-		</div>
-				<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-8f5b5ff" data-id="8f5b5ff" data-element_type="column" data-e-type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-147fa21 elementor-widget elementor-widget-heading" data-id="147fa21" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
-					<h2 class="elementor-heading-title elementor-size-default">Social Media</h2>				</div>
-				<div class="elementor-element elementor-element-b5d32cf e-grid-align-left elementor-shape-rounded elementor-grid-0 elementor-widget elementor-widget-social-icons" data-id="b5d32cf" data-element_type="widget" data-e-type="widget" data-widget_type="social-icons.default">
-							<div class="elementor-social-icons-wrapper elementor-grid" role="list">
-							<span class="elementor-grid-item" role="listitem">
-					<a class="elementor-icon elementor-social-icon elementor-social-icon-icon-facebook elementor-repeater-item-443f79e" href="https://www.facebook.com/10xdventures" target="_blank">
-						<span class="elementor-screen-only">Icon-facebook</span>
-						<i aria-hidden="true" class="icon icon-facebook"></i>					</a>
-				</span>
-							<span class="elementor-grid-item" role="listitem">
-					<a class="elementor-icon elementor-social-icon elementor-social-icon-instagram elementor-repeater-item-96af127" href="https://www.instagram.com/10xdigitalventures/" target="_blank">
-						<span class="elementor-screen-only">Instagram</span>
-						<svg aria-hidden="true" class="e-font-icon-svg e-fab-instagram" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg>					</a>
-				</span>
-							<span class="elementor-grid-item" role="listitem">
-					<a class="elementor-icon elementor-social-icon elementor-social-icon-linkedin-in elementor-repeater-item-771403d" href="https://www.linkedin.com/company/10xdventures/" target="_blank">
-						<span class="elementor-screen-only">Linkedin-in</span>
-						<svg aria-hidden="true" class="e-font-icon-svg e-fab-linkedin-in" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path></svg>					</a>
-				</span>
-					</div>
-						</div>
-					</div>
-		</div>
-					</div>
-		</section>
-					</div>
-		</div>
-					</div>
-		</section>
-				<div class="elementor-element elementor-element-e625111 elementor-widget__width-auto elementor-absolute elementor-hidden-tablet elementor-hidden-mobile elementor-widget elementor-widget-heading" data-id="e625111" data-element_type="widget" data-e-type="widget" data-settings="{" _position":"absolute"}"="" data-widget_type="heading.default">
-					<h2 class="elementor-heading-title elementor-size-default">Automate</h2>				</div>
-					</div>
-		</div>
-					</div>
-		</section>
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-f673a33 elementor-reverse-tablet elementor-reverse-mobile elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="f673a33" data-element_type="section" data-e-type="section" data-settings="{" background_background":"classic"}"="">
-						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-71a8b02" data-id="71a8b02" data-element_type="column" data-e-type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-7d40f5e elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-widget elementor-widget-text-editor" data-id="7d40f5e" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
-									Copyright © 2026 CodiceSync Software Solutions. All Rights Reserved.								</div>
-				<div class="elementor-element elementor-element-84315c9 elementor-mobile-align-center elementor-list-item-link-inline elementor-icon-list--layout-inline elementor-align-end elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-widget elementor-widget-icon-list" data-id="84315c9" data-element_type="widget" data-e-type="widget" data-widget_type="icon-list.default">
-							<ul class="elementor-icon-list-items elementor-inline-items">
-							<li class="elementor-icon-list-item elementor-inline-item">
-											<a href="https://10xdigitalventures.com/privacy-policy/">
-
-											<span class="elementor-icon-list-text">Privacy Policy</span>
-											</a>
-									</li>
-								<li class="elementor-icon-list-item elementor-inline-item">
-											<a href="https://10xdigitalventures.com/terms-conditions/">
-
-											<span class="elementor-icon-list-text">Terms &amp; Conditions</span>
-											</a>
-									</li>
-						</ul>
-						</div>
-					</div>
-		</div>
-					</div>
-		</section>
-				</footer>
+  </div>
+</footer>
 		
 <script type="speculationrules">
 {"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/hello-elementor/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}

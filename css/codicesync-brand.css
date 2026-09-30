@@ -575,3 +575,78 @@ h1, h2, h3, h4, h5, h6,
 #markhor .cs-markhor-btn:hover .markhor-t {
   transform: translateY(-100%);
 }
+
+
+/* ==========================================================================
+   CodiceSync - Our Best Works White Fill & Magnetic Floating Cursor Button
+   ========================================================================== */
+
+.cs-best-card {
+  position: relative !important;
+  cursor: none !important;
+}
+
+.cs-best-card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0%;
+  background: #FFFFFF;
+  transition: height 0.5s cubic-bezier(0.65, 0, 0.35, 1);
+  z-index: 0;
+  border-radius: 24px;
+}
+
+.cs-best-card:hover::before {
+  height: 100%;
+}
+
+.cs-best-card:hover {
+  transform: rotate(1.5deg) scale(1.025) !important;
+  border-color: #FFFFFF !important;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.5), 0 0 35px rgba(255, 255, 255, 0.2) !important;
+}
+
+.cs-best-card:hover .cs-card-title-text {
+  color: #121214 !important;
+}
+
+.cs-best-card:hover .cs-card-sub-text {
+  color: #54595F !important;
+}
+
+.cs-best-card:hover .cs-card-link-btn {
+  color: #003CFE !important;
+  border-color: #003CFE !important;
+}
+
+/* Magnetic Cursor Follower Button */
+.scl-hover-btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 135px;
+  height: 135px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  color: #121214;
+  font-family: var(--cs-font-heading);
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 0.2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  opacity: 0;
+  --x: 0px;
+  --y: 0px;
+  --s: 0;
+  transform: translate3d(var(--x), var(--y), 0) translate(-50%, -50%) scale(var(--s));
+  transition: transform 0.45s cubic-bezier(0.2, 0.9, 0.25, 1), opacity 0.28s ease;
+  will-change: transform, opacity;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.3);
+  z-index: 20;
+}
