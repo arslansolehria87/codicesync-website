@@ -1935,7 +1935,6 @@ p.sc-card-desc {
     var card = btn.closest('.cs-testi-card');
     var video = card.querySelector('video');
     if (video.paused) {
-      // Pause all other videos
       document.querySelectorAll('#testimonials video').forEach(function(v) { v.pause(); });
       document.querySelectorAll('#testimonials button').forEach(function(b) { b.innerText = '▶'; });
       video.play();
@@ -1954,6 +1953,12 @@ p.sc-card-desc {
         centeredSlides: true,
         slidesPerView: 'auto',
         initialSlide: 2,
+        speed: 800,
+        autoplay: {
+          delay: 4000,
+          disableOnInteraction: false,
+          pauseOnMouseEnter: true
+        },
         coverflowEffect: {
           rotate: 15,
           stretch: 0,
@@ -1967,20 +1972,49 @@ p.sc-card-desc {
           prevEl: '.cs-testi-prev',
         },
         on: {
-          slideChange: function() {
-            var slides = this.slides;
-            var activeIdx = this.activeIndex;
-            if (slides && slides[activeIdx]) {
-              var name = slides[activeIdx].getAttribute('data-client-name') || 'Dr Javed';
-              var labelEl = document.getElementById('cs-active-client-name');
-              if (labelEl) labelEl.innerText = name;
-            }
+          init: function() {
+            playActiveSlideVideo(this);
+          },
+          slideChangeTransitionEnd: function() {
+            playActiveSlideVideo(this);
           }
         }
       });
+
+      function playActiveSlideVideo(swiperInstance) {
+        var slides = swiperInstance.slides;
+        var activeIdx = swiperInstance.activeIndex;
+        
+        // Pause all other videos
+        document.querySelectorAll('#testimonials video').forEach(function(v) {
+          v.pause();
+        });
+        document.querySelectorAll('#testimonials button').forEach(function(b) {
+          b.innerText = '▶';
+        });
+
+        if (slides && slides[activeIdx]) {
+          var activeSlide = slides[activeIdx];
+          var name = activeSlide.getAttribute('data-client-name') || 'Dr Javed';
+          var labelEl = document.getElementById('cs-active-client-name');
+          if (labelEl) labelEl.innerText = name;
+
+          var video = activeSlide.querySelector('video');
+          var btn = activeSlide.querySelector('button');
+          if (video) {
+            var playPromise = video.play();
+            if (playPromise !== undefined) {
+              playPromise.then(function() {
+                if (btn) btn.innerText = '❚❚';
+              }).catch(function(error) {
+                console.log('Video autoplay prevented by browser policy:', error);
+              });
+            }
+          }
+        }
+      }
     }
-  });
-</script>
+  });</script>
 
 </main>
 
