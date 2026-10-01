@@ -1755,7 +1755,7 @@ p.sc-card-desc {
       <div class="swiper-wrapper" style="align-items: center;">
         
         <!-- Slide 1 -->
-        <div class="swiper-slide cs-testi-card" data-client-name="Hammad Safi" style="width: 250px; height: 380px; border-radius: 20px; overflow: hidden; position: relative; background: #1A1A1E; border: 1px solid rgba(255,255,255,0.12); box-shadow: 0 15px 35px rgba(0,0,0,0.5); transition: all 0.4s ease;">
+        <div class="swiper-slide cs-testi-card" data-client-name="Hammad Safi" style="width: 260px !important; max-width: 260px; height: 390px; border-radius: 20px; flex-shrink: 0; overflow: hidden; position: relative; background: #1A1A1E; border: 1px solid rgba(255,255,255,0.12); box-shadow: 0 15px 35px rgba(0,0,0,0.5); transition: all 0.4s ease;">
           <video poster="images/1.jpg" style="width: 100%; height: 100%; object-fit: cover;" playsinline muted loop>
             <source src="media/69f05ae605d4199001390142.mp4" type="video/mp4">
           </video>
@@ -1767,7 +1767,7 @@ p.sc-card-desc {
         </div>
 
         <!-- Slide 2 -->
-        <div class="swiper-slide cs-testi-card" data-client-name="Fahad Raza" style="width: 250px; height: 380px; border-radius: 20px; overflow: hidden; position: relative; background: #1A1A1E; border: 1px solid rgba(255,255,255,0.12); box-shadow: 0 15px 35px rgba(0,0,0,0.5); transition: all 0.4s ease;">
+        <div class="swiper-slide cs-testi-card" data-client-name="Fahad Raza" style="width: 260px !important; max-width: 260px; height: 390px; border-radius: 20px; flex-shrink: 0; overflow: hidden; position: relative; background: #1A1A1E; border: 1px solid rgba(255,255,255,0.12); box-shadow: 0 15px 35px rgba(0,0,0,0.5); transition: all 0.4s ease;">
           <video poster="images/2.jpg" style="width: 100%; height: 100%; object-fit: cover;" playsinline muted loop>
             <source src="media/69f05ae6eecc3af70ad344cb.mp4" type="video/mp4">
           </video>
@@ -1779,7 +1779,7 @@ p.sc-card-desc {
         </div>
 
         <!-- Slide 3 (Active Center) -->
-        <div class="swiper-slide cs-testi-card" data-client-name="Dr Javed" style="width: 250px; height: 380px; border-radius: 20px; overflow: hidden; position: relative; background: #1A1A1E; border: 1px solid rgba(255,255,255,0.12); box-shadow: 0 15px 35px rgba(0,0,0,0.5); transition: all 0.4s ease;">
+        <div class="swiper-slide cs-testi-card" data-client-name="Dr Javed" style="width: 260px !important; max-width: 260px; height: 390px; border-radius: 20px; flex-shrink: 0; overflow: hidden; position: relative; background: #1A1A1E; border: 1px solid rgba(255,255,255,0.12); box-shadow: 0 15px 35px rgba(0,0,0,0.5); transition: all 0.4s ease;">
           <video poster="images/3.jpg" style="width: 100%; height: 100%; object-fit: cover;" playsinline muted loop>
             <source src="media/69c631a75ebd4919967c4e8a.mp4" type="video/mp4">
           </video>
@@ -1791,7 +1791,7 @@ p.sc-card-desc {
         </div>
 
         <!-- Slide 4 -->
-        <div class="swiper-slide cs-testi-card" data-client-name="Shahzaib Khan" style="width: 250px; height: 380px; border-radius: 20px; overflow: hidden; position: relative; background: #1A1A1E; border: 1px solid rgba(255,255,255,0.12); box-shadow: 0 15px 35px rgba(0,0,0,0.5); transition: all 0.4s ease;">
+        <div class="swiper-slide cs-testi-card" data-client-name="Shahzaib Khan" style="width: 260px !important; max-width: 260px; height: 390px; border-radius: 20px; flex-shrink: 0; overflow: hidden; position: relative; background: #1A1A1E; border: 1px solid rgba(255,255,255,0.12); box-shadow: 0 15px 35px rgba(0,0,0,0.5); transition: all 0.4s ease;">
           <video poster="images/696b75744e42b928ed58394e.jpg" style="width: 100%; height: 100%; object-fit: cover;" playsinline muted loop>
             <source src="media/69c631a75ebd4946c87c4e8f.mp4" type="video/mp4">
           </video>
@@ -1803,7 +1803,7 @@ p.sc-card-desc {
         </div>
 
         <!-- Slide 5 -->
-        <div class="swiper-slide cs-testi-card" data-client-name="Childlife Foundation" style="width: 250px; height: 380px; border-radius: 20px; overflow: hidden; position: relative; background: #1A1A1E; border: 1px solid rgba(255,255,255,0.12); box-shadow: 0 15px 35px rgba(0,0,0,0.5); transition: all 0.4s ease;">
+        <div class="swiper-slide cs-testi-card" data-client-name="Childlife Foundation" style="width: 260px !important; max-width: 260px; height: 390px; border-radius: 20px; flex-shrink: 0; overflow: hidden; position: relative; background: #1A1A1E; border: 1px solid rgba(255,255,255,0.12); box-shadow: 0 15px 35px rgba(0,0,0,0.5); transition: all 0.4s ease;">
           <video poster="images/6a08502fdbe569a25d6a9931.jpg" style="width: 100%; height: 100%; object-fit: cover;" playsinline muted loop>
             <source src="media/6aa79e774c0f71e6c6bb5ff3.mp4" type="video/mp4">
           </video>
@@ -1945,76 +1945,79 @@ p.sc-card-desc {
     }
   }
 
-  document.addEventListener('DOMContentLoaded', function() {
-    if (typeof Swiper !== 'undefined') {
-      var testiSwiper = new Swiper('.cs-testimonials-swiper', {
-        effect: 'coverflow',
-        grabCursor: true,
-        centeredSlides: true,
-        slidesPerView: 'auto',
-        initialSlide: 2,
-        speed: 800,
-        autoplay: {
-          delay: 4000,
-          disableOnInteraction: false,
-          pauseOnMouseEnter: true
+  (function startTestiSwiperWhenReady() {
+    if (typeof Swiper === 'undefined') {
+      setTimeout(startTestiSwiperWhenReady, 100);
+      return;
+    }
+
+    var testiSwiper = new Swiper('.cs-testimonials-swiper', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      initialSlide: 2,
+      speed: 800,
+      autoplay: {
+        delay: 3500,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: false
+      },
+      coverflowEffect: {
+        rotate: 15,
+        stretch: 0,
+        depth: 120,
+        modifier: 1,
+        slideShadows: false,
+      },
+      loop: true,
+      navigation: {
+        nextEl: '.cs-testi-next',
+        prevEl: '.cs-testi-prev',
+      },
+      on: {
+        init: function() {
+          playActiveSlideVideo(this);
         },
-        coverflowEffect: {
-          rotate: 15,
-          stretch: 0,
-          depth: 120,
-          modifier: 1,
-          slideShadows: false,
-        },
-        loop: true,
-        navigation: {
-          nextEl: '.cs-testi-next',
-          prevEl: '.cs-testi-prev',
-        },
-        on: {
-          init: function() {
-            playActiveSlideVideo(this);
-          },
-          slideChangeTransitionEnd: function() {
-            playActiveSlideVideo(this);
-          }
+        slideChangeTransitionEnd: function() {
+          playActiveSlideVideo(this);
         }
+      }
+    });
+
+    function playActiveSlideVideo(swiperInstance) {
+      var slides = swiperInstance.slides;
+      var activeIdx = swiperInstance.activeIndex;
+      
+      // Pause all other videos
+      document.querySelectorAll('#testimonials video').forEach(function(v) {
+        v.pause();
+      });
+      document.querySelectorAll('#testimonials button').forEach(function(b) {
+        b.innerText = '▶';
       });
 
-      function playActiveSlideVideo(swiperInstance) {
-        var slides = swiperInstance.slides;
-        var activeIdx = swiperInstance.activeIndex;
-        
-        // Pause all other videos
-        document.querySelectorAll('#testimonials video').forEach(function(v) {
-          v.pause();
-        });
-        document.querySelectorAll('#testimonials button').forEach(function(b) {
-          b.innerText = '▶';
-        });
+      if (slides && slides[activeIdx]) {
+        var activeSlide = slides[activeIdx];
+        var name = activeSlide.getAttribute('data-client-name') || 'Dr Javed';
+        var labelEl = document.getElementById('cs-active-client-name');
+        if (labelEl) labelEl.innerText = name;
 
-        if (slides && slides[activeIdx]) {
-          var activeSlide = slides[activeIdx];
-          var name = activeSlide.getAttribute('data-client-name') || 'Dr Javed';
-          var labelEl = document.getElementById('cs-active-client-name');
-          if (labelEl) labelEl.innerText = name;
-
-          var video = activeSlide.querySelector('video');
-          var btn = activeSlide.querySelector('button');
-          if (video) {
-            var playPromise = video.play();
-            if (playPromise !== undefined) {
-              playPromise.then(function() {
-                if (btn) btn.innerText = '❚❚';
-              }).catch(function(error) {
-                console.log('Video autoplay prevented by browser policy:', error);
-              });
-            }
+        var video = activeSlide.querySelector('video');
+        var btn = activeSlide.querySelector('button');
+        if (video) {
+          var playPromise = video.play();
+          if (playPromise !== undefined) {
+            playPromise.then(function() {
+              if (btn) btn.innerText = '❚❚';
+            }).catch(function(error) {
+              console.log('Autoplay handled:', error);
+            });
           }
         }
       }
     }
-  });</script>
+  })();</script>
 
 </main>
 
